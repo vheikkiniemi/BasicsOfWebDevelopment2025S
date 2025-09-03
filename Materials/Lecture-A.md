@@ -398,3 +398,137 @@ body {
 *   **Improves maintainability**: One change can affect many pages.
 *   **Enables responsive design**: Works with media queries and flexible layouts.
 *   **Enhances user experience**: Through animations, transitions, and visual hierarchy.
+
+***
+
+# 🎓 Mini-Assignment: Styling a Simple Web Page with CSS
+
+## 🧩 Objective:
+
+Create a simple static web page using **HTML** and style it using **three different CSS methods**: inline, internal, and external.
+
+***
+
+## 📁 Instructions:
+
+### 1. **Create the Project Folder**
+
+Structure your files like this:
+
+    /css-assignment
+    ├── index.html
+    ├── styles.css
+
+***
+
+### 2. **Write the HTML Content**
+
+In `index.html`, include:
+
+*   A heading (`<h1>`)
+*   A paragraph (`<p>`)
+*   An image (`<img>`)
+*   A link (`<a>`)
+
+***
+
+### 3. **Apply CSS in Three Ways**
+
+#### ✅ A. Inline CSS
+
+Add a style directly to one element:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+</head>
+<body>
+  <h1 style="color: darkblue;">Welcome to My Page</h1>
+</body>
+</html>
+```
+
+#### ✅ B. Internal CSS
+
+Add a `<style>` block inside the `<head>`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Styled Page</title>
+  <style>
+    p {
+      font-size: 18px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: darkblue;">Welcome to My Page</h1>
+  <p>This is a paragraph styled with internal CSS.</p>
+</body>
+</html>
+```
+
+#### ✅ C. External CSS
+
+Create a file called `styles.css` and link it:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Styled Page</title>
+  <style>
+    p {
+      font-size: 18px;
+      color: gray;
+    }
+  </style>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 style="color: darkblue;">Welcome to My Page</h1>
+  <p>This is a paragraph styled with internal CSS.</p>
+  <a href="#">Click me</a>
+</body>
+</html>
+```
+
+In `styles.css`:
+
+```css
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+```
+
+***
+
+### 📌 Deliverables:
+
+*   `index.html` with all three CSS methods demonstrated.
+*   `styles.css` with external styles.
+*   Screenshot or live preview of the styled page.
+
+***
+
+### 🧠 Reflection Questions:
+
+1.  Which CSS method is easiest to use?
+2.  Which method is best for large projects?
+3.  What are the pros and cons of each?
+
+***
