@@ -1,5 +1,8 @@
 # Task A: Getting started with tools, HTML, and CSS
 
+> [!NOTE]
+> The material was created with the help of ChatGPT and Copilot.
+
 ## 🎯 Objectives
 
 * Understand course structure and tools

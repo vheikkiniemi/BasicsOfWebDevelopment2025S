@@ -1,5 +1,8 @@
 # 🌐 The Evolution of Web Browsing and Service Delivery  
 
+> [!NOTE]
+> The material was created with the help of ChatGPT and Copilot.
+
 ## 🕰️ 1. The Early Web (1990s)
 
 ### Key Milestones:
