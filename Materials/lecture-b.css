@@ -1,0 +1,78 @@
+/* [Function: Set background color for whole page] */
+body {
+  background-color: #f4f8fb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* [Function: Style the main heading] */
+h1 {
+  color: #003366;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* [Function: Style secondary headings] */
+h2 {
+  color: #0055a5;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* [Function: Paragraph text styling] */
+p {
+  color: #333333;
+  max-width: 600px;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+}
+
+/* [Function: Unordered and ordered list styling] */
+ul, ol {
+  max-width: 600px;
+  margin: 0.5rem auto 1rem auto;
+  padding-left: 2rem;
+}
+
+ul li {
+  list-style-type: square; /* [Function: Custom bullet style] */
+  color: #444444;
+}
+
+ol li {
+  list-style-type: decimal-leading-zero; /* [Function: Custom ordered list style] */
+  color: #444444;
+}
+
+/* [Function: Style for links] */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #004080;
+}
+
+/* [Function: Footer styling] */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* [Function: Style section with id="goals"] */
+#goals {
+  background-color: #e6f2ff;
+  border: 2px solid #0055a5;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
