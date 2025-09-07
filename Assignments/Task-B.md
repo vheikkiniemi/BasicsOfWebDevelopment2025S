@@ -79,7 +79,7 @@
 
 9. **Validate your HTML code** using the [W3C HTML Validator](https://validator.w3.org/). Fix any major issues and ensure your code follows good structure.
 
-10. **Submit the public URL** to the corresponding Task C assignment in **itslearning**.
+10. **Submit the public URL** to the corresponding Task B assignment in **itslearning**.
 
 > [!IMPORTANT] 
 > The deadline is specified in itslearning and the submission will close automatically when the deadline is reached. No late submissions will be accepted.
