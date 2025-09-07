@@ -1,4 +1,4 @@
-# 🌐 Intro Material: HTML Basics & Azure Static Web Apps
+# 🌐 HTML Basics & Azure Static Web Apps
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
@@ -41,7 +41,7 @@ Today, web development is simpler and more automated. Tools like **Visual Studio
 
 ---
 
-> [!INFO]  
+> [!IMPORTANT] 
 > In this course, **Azure Static Web Apps** represents the cloud era: no need to configure your own server or buy “webhotel” space. Instead, you simply push code to GitHub, and the cloud does the rest.
 
 ---
