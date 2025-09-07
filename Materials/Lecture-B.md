@@ -1,4 +1,4 @@
-# 🌐 HTML Basics & Azure Static Web Apps
+# 🌐 Publishing Web Pages with Azure Static Web Apps
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
