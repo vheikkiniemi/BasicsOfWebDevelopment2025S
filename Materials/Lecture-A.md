@@ -196,10 +196,6 @@ No databases, no backend code, no server-side logic.
 
 ***
 
-Here’s a clear and structured explanation of the **history and structure of the HTML language**, tailored for higher education students studying web technologies.
-
-***
-
 # 🧠 Understanding HTML: History and Structure
 
 ## 🕰️ A Brief History of HTML
@@ -293,10 +289,6 @@ Creating HTML content is simple and requires:
 4.  *(Optional)* CSS file for styling
 
 No frameworks, databases, or servers are required for basic static pages.
-
-***
-
-Here’s a clear and structured explanation of **CSS (Cascading Style Sheets)**, including its **history**, **syntax**, and the **different ways to apply CSS to HTML content**. This is ideal for higher education students learning web development fundamentals.
 
 ***
 
