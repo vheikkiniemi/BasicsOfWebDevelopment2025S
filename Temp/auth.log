@@ -1,0 +1,100 @@
+Sep 16 14:32:09 debian systemd-logind[358]: New seat seat0.
+Sep 16 14:32:09 debian systemd-logind[358]: Watching system buttons on /dev/input/event3 (Power Button)
+Sep 16 14:32:09 debian systemd-logind[358]: Watching system buttons on /dev/input/event4 (Sleep Button)
+Sep 16 14:32:09 debian systemd-logind[358]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Sep 16 14:32:09 debian sshd[407]: Server listening on 0.0.0.0 port 22.
+Sep 16 14:32:09 debian sshd[407]: Server listening on :: port 22.
+Sep 16 14:35:01 debian login[396]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Sep 16 14:35:01 debian systemd-logind[358]: New session 1 of user root.
+Sep 16 14:35:01 debian systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Sep 16 14:35:01 debian login[433]: ROOT LOGIN  on '/dev/tty1'
+Sep 16 14:36:28 debian sshd[437]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105  user=root
+Sep 16 14:36:30 debian sshd[437]: Failed password for root from 192.168.1.105 port 58853 ssh2
+Sep 16 14:36:32 debian sshd[437]: Connection reset by authenticating user root 192.168.1.105 port 58853 [preauth]
+Sep 16 14:36:38 debian sshd[439]: Invalid user ville from 192.168.1.105 port 58854
+Sep 16 14:36:41 debian sshd[439]: pam_unix(sshd:auth): check pass; user unknown
+Sep 16 14:36:41 debian sshd[439]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105
+Sep 16 14:36:42 debian sshd[439]: Failed password for invalid user ville from 192.168.1.105 port 58854 ssh2
+Sep 16 14:36:44 debian sshd[439]: pam_unix(sshd:auth): check pass; user unknown
+Sep 16 14:36:45 debian sshd[439]: Failed password for invalid user ville from 192.168.1.105 port 58854 ssh2
+Sep 16 14:36:47 debian sshd[439]: pam_unix(sshd:auth): check pass; user unknown
+Sep 16 14:36:49 debian sshd[439]: Failed password for invalid user ville from 192.168.1.105 port 58854 ssh2
+Sep 16 14:36:49 debian sshd[439]: Connection reset by invalid user ville 192.168.1.105 port 58854 [preauth]
+Sep 16 14:36:49 debian sshd[439]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105
+Sep 16 14:37:13 debian login[396]: pam_unix(login:session): session closed for user root
+Sep 16 14:37:13 debian systemd-logind[358]: Session 1 logged out. Waiting for processes to exit.
+Sep 16 14:37:13 debian systemd-logind[358]: Removed session 1.
+Sep 16 14:37:19 debian login[449]: pam_unix(login:session): session opened for user linuxadmin(uid=1000) by LOGIN(uid=0)
+Sep 16 14:37:19 debian systemd-logind[358]: New session 3 of user linuxadmin.
+Sep 16 14:37:19 debian systemd: pam_unix(systemd-user:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:37:22 debian login[449]: pam_unix(login:session): session closed for user linuxadmin
+Sep 16 14:37:22 debian systemd-logind[358]: Session 3 logged out. Waiting for processes to exit.
+Sep 16 14:37:22 debian systemd-logind[358]: Removed session 3.
+Sep 16 14:37:23 debian systemd: pam_unix(systemd-user:session): session closed for user root
+Sep 16 14:37:32 debian systemd: pam_unix(systemd-user:session): session closed for user linuxadmin
+Sep 16 14:40:28 debian login[466]: pam_unix(login:auth): check pass; user unknown
+Sep 16 14:40:28 debian login[466]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=
+Sep 16 14:40:31 debian login[466]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Sep 16 14:40:34 debian login[466]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=root
+Sep 16 14:40:39 debian login[466]: FAILED LOGIN (2) on '/dev/tty1' FOR 'root', Authentication failure
+Sep 16 14:40:43 debian login[466]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Sep 16 14:40:43 debian systemd-logind[358]: New session 5 of user root.
+Sep 16 14:40:43 debian systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Sep 16 14:40:43 debian login[481]: ROOT LOGIN  on '/dev/tty1'
+Sep 16 14:41:01 debian sshd[485]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105  user=linuxadmin
+Sep 16 14:41:03 debian sshd[485]: Failed password for linuxadmin from 192.168.1.105 port 58874 ssh2
+Sep 16 14:41:07 debian sshd[485]: Failed password for linuxadmin from 192.168.1.105 port 58874 ssh2
+Sep 16 14:41:12 debian sshd[485]: Accepted password for linuxadmin from 192.168.1.105 port 58874 ssh2
+Sep 16 14:41:12 debian sshd[485]: pam_unix(sshd:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:41:12 debian systemd-logind[358]: New session 7 of user linuxadmin.
+Sep 16 14:41:12 debian systemd: pam_unix(systemd-user:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:41:32 debian su: (to root) linuxadmin on pts/0
+Sep 16 14:41:32 debian su: pam_unix(su:session): session opened for user root(uid=0) by linuxadmin(uid=1000)
+Sep 16 14:42:13 debian login[466]: pam_unix(login:session): session closed for user root
+Sep 16 14:42:13 debian systemd-logind[358]: Session 5 logged out. Waiting for processes to exit.
+Sep 16 14:42:13 debian systemd-logind[358]: Removed session 5.
+Sep 16 14:42:23 debian systemd: pam_unix(systemd-user:session): session closed for user root
+Sep 16 14:47:47 debian su: pam_unix(su:session): session closed for user root
+Sep 16 14:47:52 debian sshd[498]: Received disconnect from 192.168.1.105 port 58874:11: disconnected by user
+Sep 16 14:47:52 debian sshd[498]: Disconnected from user linuxadmin 192.168.1.105 port 58874
+Sep 16 14:47:52 debian sshd[485]: pam_unix(sshd:session): session closed for user linuxadmin
+Sep 16 14:47:52 debian systemd-logind[358]: Session 7 logged out. Waiting for processes to exit.
+Sep 16 14:47:52 debian systemd-logind[358]: Removed session 7.
+Sep 16 14:48:00 debian sshd[525]: Invalid user hemuli from 192.168.1.105 port 58916
+Sep 16 14:48:02 debian sshd[525]: pam_unix(sshd:auth): check pass; user unknown
+Sep 16 14:48:02 debian sshd[525]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105
+Sep 16 14:48:02 debian systemd: pam_unix(systemd-user:session): session closed for user linuxadmin
+Sep 16 14:48:04 debian sshd[525]: Failed password for invalid user hemuli from 192.168.1.105 port 58916 ssh2
+Sep 16 14:48:06 debian sshd[525]: Connection reset by invalid user hemuli 192.168.1.105 port 58916 [preauth]
+Sep 16 14:48:17 debian login[517]: pam_unix(login:auth): check pass; user unknown
+Sep 16 14:48:17 debian login[517]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=
+Sep 16 14:48:19 debian login[517]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Sep 16 14:48:23 debian login[517]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=root
+Sep 16 14:48:26 debian login[517]: FAILED LOGIN (2) on '/dev/tty1' FOR 'root', Authentication failure
+Sep 16 14:48:50 debian login[517]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Sep 16 14:48:50 debian systemd-logind[358]: New session 9 of user root.
+Sep 16 14:48:50 debian systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Sep 16 14:48:50 debian login[541]: ROOT LOGIN  on '/dev/tty1'
+Sep 16 14:48:55 debian login[517]: pam_unix(login:session): session closed for user root
+Sep 16 14:48:55 debian systemd-logind[358]: Session 9 logged out. Waiting for processes to exit.
+Sep 16 14:48:55 debian systemd-logind[358]: Removed session 9.
+Sep 16 14:49:05 debian systemd: pam_unix(systemd-user:session): session closed for user root
+Sep 16 14:49:05 debian login[544]: pam_unix(login:session): session opened for user linuxadmin(uid=1000) by LOGIN(uid=0)
+Sep 16 14:49:05 debian systemd-logind[358]: New session 11 of user linuxadmin.
+Sep 16 14:49:05 debian systemd: pam_unix(systemd-user:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:49:08 debian su: pam_unix(su:auth): authentication failure; logname=linuxadmin uid=1000 euid=0 tty=tty1 ruser=linuxadmin rhost=  user=root
+Sep 16 14:49:10 debian su: FAILED SU (to root) linuxadmin on tty1
+Sep 16 14:49:16 debian su: pam_unix(su:auth): authentication failure; logname=linuxadmin uid=1000 euid=0 tty=tty1 ruser=linuxadmin rhost=  user=root
+Sep 16 14:49:18 debian su: FAILED SU (to root) linuxadmin on tty1
+Sep 16 14:49:21 debian login[544]: pam_unix(login:session): session closed for user linuxadmin
+Sep 16 14:49:21 debian systemd-logind[358]: Session 11 logged out. Waiting for processes to exit.
+Sep 16 14:49:21 debian systemd-logind[358]: Removed session 11.
+Sep 16 14:49:29 debian sshd[564]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.105  user=linuxadmin
+Sep 16 14:49:31 debian sshd[564]: Failed password for linuxadmin from 192.168.1.105 port 58921 ssh2
+Sep 16 14:49:31 debian systemd: pam_unix(systemd-user:session): session closed for user linuxadmin
+Sep 16 14:49:34 debian sshd[564]: Accepted password for linuxadmin from 192.168.1.105 port 58921 ssh2
+Sep 16 14:49:34 debian sshd[564]: pam_unix(sshd:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:49:34 debian systemd-logind[358]: New session 13 of user linuxadmin.
+Sep 16 14:49:34 debian systemd: pam_unix(systemd-user:session): session opened for user linuxadmin(uid=1000) by (uid=0)
+Sep 16 14:49:39 debian su: (to root) linuxadmin on pts/0
+Sep 16 14:49:39 debian su: pam_unix(su:session): session opened for user root(uid=0) by linuxadmin(uid=1000)
