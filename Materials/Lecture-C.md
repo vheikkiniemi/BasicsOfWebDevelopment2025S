@@ -140,13 +140,3 @@ When embedding multimedia:
 * Use the **`controls` attribute** for audio and video so users can play/pause easily.
 * Keep file sizes reasonable to avoid slow loading times.
 * Clearly state the **source and license** of each media item on your page.
-
----
-
-## 🌍 Publishing and Validation
-
-After building your multimedia page:
-
-1. Deploy it to your **Azure Static Web App** so it’s publicly accessible.
-2. Run your HTML through the [W3C HTML Validator](https://validator.w3.org/) to check for errors.
-3. Ensure the CSS styles improve readability with consistent spacing and layout.
