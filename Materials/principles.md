@@ -60,13 +60,12 @@ This page introduces timeless design principles that will help you build **clear
 
 ## 3. Resources for Further Learning
 
-* [W3C: Web Design Principles](https://www.w3.org/standards/webdesign/)
-* [MDN: CSS Styling Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS)
-* [Google Material Design: Layout](https://m3.material.io/foundations/layout/overview)
+* [W3C: Web Design Principles](https://www.w3.org/TR/design-principles/)
+* [MDN: CSS Styling Basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
+* [Google Material Design](https://m3.material.io/)
 * [Coolors – Palette Generator](https://coolors.co/)
 * [Smashing Magazine – Design Articles](https://www.smashingmagazine.com/category/design)
-* [Coolors Palette Generator](https://coolors.co/)
-* [Material Design Color Tool](https://material.io/resources/color/)
+* [Material Design Color Tool](https://m3.material.io/styles/color/system/overview)
 
 ---
 
