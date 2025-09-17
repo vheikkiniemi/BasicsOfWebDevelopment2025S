@@ -23,7 +23,7 @@
 
 > [!TIP]
 > Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.  
-> **[Check this out!](principles.md)**
+> **[Check this out!](../Materials/principles.md)**
 
 1. Inside your course repository, **create a new folder named `task-c`**.
 
@@ -105,7 +105,7 @@ As the course progresses, **the bar for “professional look & feel” gets high
 * Good contrast (WCAG-aware), semantic HTML, readable line length (45–80 chars)
 * Thoughtful hierarchy (H1 → H2 → body), balanced whitespace, tidy components
 
-> 💡 If you’re unsure, compare your page to the **[principles.md](principles.md)** file and run a quick check with a contrast tool before publishing.
+> 💡 If you’re unsure, compare your page to the **[principles.md](../Materials/principles.md)** file and run a quick check with a contrast tool before publishing.
 
 ---
 
