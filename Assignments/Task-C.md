@@ -1,4 +1,4 @@
-# Task C: Multimedia and Copyright Awareness
+# Task C: Creating an HTML page with multimedia
 
 ## 🎯 Objectives
 
