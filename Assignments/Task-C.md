@@ -22,7 +22,8 @@
 ### 🔧 Instructions
 
 > [!TIP]
-> Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.
+> Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.  
+> **[Check this out!](principles.md)**
 
 1. Inside your course repository, **create a new folder named `task-c`**.
 
@@ -81,6 +82,33 @@
 
 ---
 
+## 🌱 Professionalism Clause (expectations rise as we go)
+
+> **Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.**
+
+As the course progresses, **the bar for “professional look & feel” gets higher**. With a friendly wink 😉 the teacher reserves the right to **reject** a submission if the page looks **non-professional**.
+
+**Non-professional red flags include (but aren’t limited to):**
+
+* Chaotic layout: elements misaligned, random centering, uneven spacing, no visual rhythm
+* Inconsistent styles: too many fonts/sizes/colors, inconsistent headings or link styles
+* Poor color use: low contrast text, hard-to-read foreground/background combos
+* Visual noise: unnecessary borders/shadows/animations, flashing or clashing colors
+* Sloppy typography: very long line lengths, cramped line height, tiny or giant fonts
+* Accessibility neglect: missing alt texts, illegible contrast, focus states ignored
+* “Placeholder-feel”: lorem ipsum left in, broken image links, default boilerplate with no care
+
+**What “professional” looks like here:**
+
+* Clear grid/alignment, consistent spacing (margins/padding), predictable structure
+* 1–2 fonts, 2–3 colors used purposefully (primary/secondary/accent)
+* Good contrast (WCAG-aware), semantic HTML, readable line length (45–80 chars)
+* Thoughtful hierarchy (H1 → H2 → body), balanced whitespace, tidy components
+
+> 💡 If you’re unsure, compare your page to the **[principles.md](principles.md)** file and run a quick check with a contrast tool before publishing.
+
+---
+
 ## ✅ Automatic Validation Criteria
 
 Your published site must:
@@ -100,3 +128,5 @@ Your published site must:
 * Personalized comments in both files
 * Folder published via Azure Static Web Apps
 * Link submitted through itslearning on time
+
+> 🧭 **Teacher’s prerogative:** Even if the automatic checks pass, a submission may be **rejected** for a **non-professional appearance** per the *Professionalism Clause* above.
