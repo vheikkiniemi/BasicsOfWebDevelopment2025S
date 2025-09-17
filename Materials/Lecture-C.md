@@ -1,5 +1,8 @@
 # 🌐 Multimedia and Copyright Awareness
 
+> [!NOTE]
+> The material was created with the help of ChatGPT and Copilot.
+
 ## 🎬 Why Multimedia?
 
 Modern websites are not just text. By adding images, audio, and video you can:

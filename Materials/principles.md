@@ -2,6 +2,9 @@
 
 This page introduces timeless design principles that will help you build **clear, professional, and accessible websites**. The content will be updated and extended as the course progresses.
 
+> [!NOTE]
+> The material was created with the help of ChatGPT and Copilot.
+
 ---
 
 > [!TIP]
