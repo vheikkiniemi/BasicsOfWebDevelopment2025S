@@ -1,14 +1,13 @@
-# Task C: Creating an HTML page with multimedia
+# Task D: Practicing CSS Selectors
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
 
 ## 🎯 Objectives
 
-* Learn how to embed multimedia content in HTML
-* Understand Creative Commons licensing and legal use of images, audio, and video
-* Practice structuring content with semantic HTML
-* Publish your project as an Azure Static Web App from a dedicated folder
+* Understand and apply different types of CSS selectors
+* Practice targeting elements with element, class, id, group, descendant, and attribute selectors
+* Strengthen CSS structure and maintainability through clean, organized rules
 
 ---
 
@@ -20,31 +19,47 @@
 
 ---
 
-## 🧪 Multimedia Showcase Page
+## 🧪 CSS Selector Playground
 
 ### 🔧 Instructions
 
 > [!TIP]
-> Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.  
+> Always aim to keep your site visually clear and well-structured. Proper spacing, alignment, and consistent styles help make your content more readable and professional.
 > **[Check this out!](../Materials/principles.md)**
 
-1. Inside your course repository, **create a new folder named `task-c`**.
+1. Inside your course repository, **create a new folder named `task-d`**.
 
-2. In that folder, create a file named `index.html` and another named `style.css`.
+2. In that folder, create `index.html` and `style.css`.
 
-3. In your `index.html`, add the following content:
+3. In your `index.html`, add multiple HTML elements so you can test different CSS selectors. Include:
 
-   * A `<h1>` heading titled "My Multimedia Showcase"
-   * A **Creative Commons licensed image** embedded using `<img>` with `alt` text
-   * An embedded **audio clip** (e.g., MP3 or OGG) using `<audio controls>`
-   * An embedded **video clip** (e.g., MP4 or web video) using `<video controls>`
-   * A paragraph explaining where the media was sourced and its license
+   * At least one element with a unique `id`, for example:
 
-4. Style the content with your `style.css` file:
+     ```html
+     <p id="special-message">This paragraph uses an ID selector.</p>
+     ```
+   * At least 2 different headings (e.g., `<h1>`, `<h2>`, `<h3>`)
+   * At least 2 `<div>` elements with different `class` attributes
+   * A list (`<ul>` or `<ol>`) with at least 3 list items
+   * At least one `<a>` tag with an `href` attribute
+   * A short section containing elements with attributes, such as:
 
-   * Limit the image width to `100%` with `max-width: 500px`
-   * Center the media elements on the page
-   * Add spacing between sections
+     ```html
+     <a href="https://example.com" target="_blank">Visit Example</a>
+     <img src="image.jpg" alt="Example image">
+     ```
+
+     These will allow you to test attribute selectors like `a[target]` or `img[alt]`
+
+4. In `style.css`, use the following types of selectors to style your content:
+
+   * **Element selectors** (e.g., `h1`, `p`)
+   * **Class selectors** (e.g., `.box`, `.highlight`)
+   * **ID selector** (e.g., `#special-message`)
+   * **Group selectors** (e.g., `h1, h2, h3`)
+   * **Descendant selectors** (e.g., `section ul li`)
+   * **Attribute selectors** (e.g., `a[target="_blank"]`, `img[alt]`)
+
 
 5. **Link the CSS file** in the HTML `<head>` section:
 
@@ -72,13 +87,13 @@
    */
    ```
 
-7. **Push your code to GitHub**, making sure all files are inside `task-c`.
+7. **Push your code to GitHub**, ensuring all files are inside the `task-d` folder.
 
-8. **Ensure the `task-c` folder is correctly included in your existing Azure Static Web App**. Your Static Web App should serve all weekly tasks from a shared root folder. Do not delete previous tasks—each task should be placed in its own subfolder (e.g., `task-a`, `task-b`, `task-c`, etc.), and all should be accessible from the same deployed application.
+7. **Ensure the `task-d` folder is correctly included in your existing Azure Static Web App**. Your Static Web App should serve all weekly tasks from a shared root folder. Do not delete previous tasks—each task should be placed in its own subfolder.
 
-9. **Validate your HTML code** using the [W3C HTML Validator](https://validator.w3.org/). Fix any major issues and ensure your code follows good structure.
+8. **Validate your HTML code** using the [W3C HTML Validator](https://validator.w3.org/). Fix any major issues and ensure your code follows good structure.
 
-10. **Submit the public URL** to the corresponding Task C assignment in **itslearning**.
+9. **Submit the public URL** to the corresponding Task D assignment in **itslearning**.
 
 > [!IMPORTANT] 
 > The deadline is specified in itslearning and the submission will close automatically when the deadline is reached. No late submissions will be accepted.
@@ -114,21 +129,23 @@ As the course progresses, **the bar for “professional look & feel” gets high
 
 ## ✅ Automatic Validation Criteria
 
-Your published site must:
-
 * Be accessible at the submitted URL (HTTP 200 OK)
 * The page includes:
 
-  * `<h1>` heading
-  * `<img>` with `alt` and CC content
-  * `<audio>` and `<video>` elements with `controls`
-  * A paragraph describing the source and licensing
-* An external `style.css` is linked and it applies (at least)
+  * At least one `<h1>` element
+  * At least one `<p>` with 3 sentences
+  * A list (`<ul>` or `<ol>`) with at least 3 items
+  * One `<a>` link to an external site using the `target` attribute
+  * An `<img>` with an `alt` attribute
+* An external `style.css` is linked and it applies:
 
-  * the image width to `100%` with `max-width: 500px`
-  * center the media elements on the page
-  * spacing between sections
-* Personalized comments in both files
+  * Element selector styling (e.g., `h1`, `p`)
+  * Class selector styling (e.g., `.box`, `.highlight`)
+  * ID selector styling (e.g., `#special-message`)
+  * Group selector styling (e.g., `h1, h2, h3`)
+  * Descendant selector styling (e.g., `section ul li`)
+  * Attribute selector styling (e.g., `a[target]`, `img[alt]`)
+* Personalized comments are present in both files
 * Folder published via Azure Static Web Apps
 * Link submitted through itslearning on time
 
