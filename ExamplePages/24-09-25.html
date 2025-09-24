@@ -42,6 +42,33 @@
             font-size: 18px;
         }
 
+        #third-paragraph, #dark-paragraph {
+            background-color: yellow;
+        }
+
+        
+        .second-paragraph a {
+            color: #1a73e8; /* Google blue */
+            text-decoration: none; /* Removes underline */
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .second-paragraph a:hover, a:focus {
+            color: #0c47b7; /* Darker blue on hover/focus */
+            text-decoration: underline; /* Adds underline for clarity */
+        }
+
+        .second-paragraph a:active {
+            color: #ff5722; /* Optional: color when clicked */
+        }
+
+
+        #third-paragraph a {
+            color: red;
+            text-decoration: none;
+        }
+
         button {
             background-color: #2e8b57;
             color: white;
@@ -78,12 +105,14 @@
     </p>
 
     <h2>This the second h2 header</h2>
-    <p class="second-paragraph first-paragraph">
+    <p class="second-paragraph">
+        <a href="https://www.example.com">Visit Example Website</a>
         This is a second paragraph.
     </p>
 
     <h2>This the third h2 header</h2>
     <p id="third-paragraph">
+        <a href="https://www.example.com">Visit Example Website</a>
         This is a second paragraph.
     </p>
 
