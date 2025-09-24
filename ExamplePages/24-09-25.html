@@ -32,6 +32,16 @@
             }
         }
 
+        
+        function toggleParagraphColor() {
+            const para = document.getElementById('dark-paragraph');
+            if (para) {
+                // Toggle between darkblue and default
+                para.style.color = (para.style.color === 'red') ? '' : 'red';
+            }
+        }
+
+
     </script>
     <style>
         body {
@@ -149,11 +159,14 @@
     <p id="dark-paragraph">
         This is a second paragraph.
     </p>
-
+    <!--
     <button>Click Me</button>
 
     <button onclick="changeParagraphColor()">Change H1 Color</button>
-    <button onclick="resetParagraphColor()">Reset H1 Color</button>
+    <button onclick="resetParagraphColor()">Reset H1 Color</button>-->
+    
+    <button onclick="toggleParagraphColor()">Toggle Paragraph Color</button>
+
 
 </body>
 </html>
