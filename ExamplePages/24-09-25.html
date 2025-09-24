@@ -3,6 +3,36 @@
 <head>
     <title>Simple Internal CSS Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function changeColor() {
+            const heading = document.querySelector('h1');
+            if (heading) {
+                heading.style.color = 'red';
+            }
+        }
+
+        function resetColor() {
+            const heading = document.querySelector('h1');
+            if (heading) {
+                heading.style.color = '';
+            }
+        }
+        
+        function changeParagraphColor() {
+            const para = document.getElementById('dark-paragraph');
+            if (para) {
+                para.style.color = 'green';
+            }
+        }
+
+        function resetParagraphColor() {
+            const para = document.getElementById('dark-paragraph');
+            if (para) {
+                para.style.color = '';
+            }
+        }
+
+    </script>
     <style>
         body {
             background-color: #f0f8ff;
@@ -121,6 +151,9 @@
     </p>
 
     <button>Click Me</button>
+
+    <button onclick="changeParagraphColor()">Change H1 Color</button>
+    <button onclick="resetParagraphColor()">Reset H1 Color</button>
 
 </body>
 </html>
