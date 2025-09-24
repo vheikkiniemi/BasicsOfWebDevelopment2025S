@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Simple Internal CSS Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #7A2D1D;
+            margin-top: 50px;
+        }
+
+        p {
+            color: blue;
+            font-size: 24px;
+        }
+
+        
+        .first-paragraph {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .second-paragraph {
+            color: #8b0000; /* Dark red */
+            font-size: 18px;
+        }
+
+        
+        #third-paragraph {
+            color: #E820E5; /* Dark red */
+            font-size: 18px;
+        }
+
+        #dark-paragraph {
+            color: #121012; /* Dark red */
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .first-paragraph,
+            #second-paragraph {
+                font-size: 1em;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Web Page</h1>
+    <h2>This the first h2 header</h2>
+    <p class="first-paragraph">
+        This is a first paragraph.
+    </p>
+
+    <h2>This the second h2 header</h2>
+    <p class="second-paragraph first-paragraph">
+        This is a second paragraph.
+    </p>
+
+    <h2>This the third h2 header</h2>
+    <p id="third-paragraph">
+        This is a second paragraph.
+    </p>
+
+    <p id="dark-paragraph">
+        This is a second paragraph.
+    </p>
+
+    <button>Click Me</button>
+
+</body>
+</html>
