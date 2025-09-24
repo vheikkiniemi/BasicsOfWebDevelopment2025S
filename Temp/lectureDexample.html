@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two Button Example</title>
+  <style>
+    #changeColor, #resetColor {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: lightblue;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #changeColor.toggled {
+      background-color: lightcoral;
+    }
+  </style>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const changeBtn = document.getElementById("changeColor");
+      const resetBtn = document.getElementById("resetColor");
+      const heading = document.getElementById("mainHeading");
+
+      changeBtn.addEventListener("click", function () {
+        changeBtn.classList.add("toggled");
+        heading.textContent = "Color changed!";
+      });
+
+      resetBtn.addEventListener("click", function () {
+        changeBtn.classList.remove("toggled");
+        heading.textContent = "Welcome!";
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <h1 id="mainHeading">Welcome!</h1>
+  <button id="changeColor">Change Color</button>
+  <button id="resetColor">Reset</button>
+
+</body>
+</html>
