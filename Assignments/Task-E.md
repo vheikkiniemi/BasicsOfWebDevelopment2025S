@@ -41,9 +41,29 @@
    * Add to **every existing row** (use ✅ or ❌).
 5. **Add your courses**:
    * In `<tbody>`, add **new rows** for your own courses (keep the same column order: Course, Mon, Tue, Wed, Thu, Fri).
-6. **Responsive rules** (edit `style.css`):
-   * Add **two media queries**
+6. **Responsive rules**:
+
+   * Add **two media queries** with the exact behavior below:
+
+   ```css
+   /* ≤ 768px: margins 5%, show only student-info + table */
+   @media (max-width: 768px) {
+     .content { margin-left: 5%; margin-right: 5%; }
+     .site-header,
+     .intro,
+     .other-content { display: none; }
+     .student-info,
+     .table-wrap { display: block; }
+   }
+
+   /* ≤ 640px: margins 1%, show only the table */
+   @media (max-width: 640px) {
+     .content { margin-left: 1%; margin-right: 1%; }
+     .student-info { display: none; }
+   }
+   ```
    * Tip: the base page already uses `.student-info`, `.table-wrap`, `.site-header`, `.intro`, `.other-content`, and `.content`. Target those classes exactly as above.
+
 7. **Publish** your `task-e` folder as part of your existing Azure Static Web App (don’t remove previous tasks).
 8. **Validate** with the W3C HTML Validator and fix issues.
 9. **Submit** the public URL to the Task E assignment in itslearning.
