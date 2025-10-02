@@ -76,28 +76,28 @@
 
 ## ⚠️ Common Mistakes (and Fixes)
 
-1. **Using `px` for body text**
-   ❌ Ignores user scaling → poor accessibility
+1. **Using `px` for body text**  
+   ❌ Ignores user scaling → poor accessibility  
    ✅ Set base with `rem`:
 
    ```css
    html{font-size:100%} body{font-size:1rem; line-height:1.6}
    ```
-2. **Runaway sizes from nested `em`**
-   ❌ `em` compounds at each nesting level
+2. **Runaway sizes from nested `em`**  
+   ❌ `em` compounds at each nesting level  
    ✅ Use `rem` for global rhythm; reserve `em` for local tweaks
-3. **`vh` causing mobile clipping**
-   ❌ Address bar changes viewport height
+3. **`vh` causing mobile clipping**  
+   ❌ Address bar changes viewport height  
    ✅ Fallback to `vh`, prefer `dvh` where supported:
 
    ```css
    .hero{min-height:100vh; min-height:100dvh}
    ```
-4. **Expecting vertical `%` to use height**
-   ❌ `%` vertical padding/margin is based on **width**
+4. **Expecting vertical `%` to use height**  
+   ❌ `%` vertical padding/margin is based on **width**  
    ✅ Use `rem` for vertical spacing for predictability
-5. **Unit soup** (too many units without a scale)
-   ❌ Inconsistent spacing, hard to maintain
+5. **Unit soup** (too many units without a scale)  
+   ❌ Inconsistent spacing, hard to maintain  
    ✅ Define tokens:
 
    ```css
@@ -108,8 +108,8 @@
      --radius-2:8px;
    }
    ```
-6. **Print units on screens**
-   ❌ `cm`/`in`/`pt` aren’t physically accurate on displays
+6. **Print units on screens**  
+   ❌ `cm`/`in`/`pt` aren’t physically accurate on displays  
    ✅ Reserve for `@media print`
 
 ---
