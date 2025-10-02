@@ -35,26 +35,26 @@
 
 ### B) Font-relative units
 
-* **em** — Relative to the **element’s computed font size**.
-  ✅ Component-local spacing that follows its text
+* **em** — Relative to the **element’s computed font size**.  
+  ✅ Component-local spacing that follows its text  
   ⚠️ Nests multiply (can “balloon” unexpectedly)
-* **rem** — Relative to the **root (`html`) font size**.
-  ✅ Global typography & spacing scale, great for accessibility
-* **ch** — Width of “0” glyph.
-  ✅ Text measure (e.g., `max-width: 65ch`)
+* **rem** — Relative to the **root (`html`) font size**.  
+  ✅ Global typography & spacing scale, great for accessibility  
+* **ch** — Width of “0” glyph.  
+  ✅ Text measure (e.g., `max-width: 65ch`)  
   ⚠️ Varies by font; test your stack
-* **ex** — x-height.
+* **ex** — x-height.  
   🤏 Rarely used due to font variation
 
 ### C) Viewport / Container-relative units
 
-* **%** — Relative to the **containing block**.
-  ✅ Fluid widths, flexible layouts
+* **%** — Relative to the **containing block**.  
+  ✅ Fluid widths, flexible layouts  
   ⚠️ Vertical `%` margins/padding are based on **container width**, not height
-* **vw/vh/vmin/vmax** — Viewport-relative.
-  ✅ Full-bleed sections, heroes, fluid type (`clamp()` with `vw`)
+* **vw/vh/vmin/vmax** — Viewport-relative.  
+  ✅ Full-bleed sections, heroes, fluid type (`clamp()` with `vw`)  
   ⚠️ Mobile address bars change `vh`; see below
-* **dvh/svh/lvh** — Dynamic/small/large viewport height.
+* **dvh/svh/lvh** — Dynamic/small/large viewport height.  
   ✅ More accurate heights on mobile UI chrome changes
 
 ---
