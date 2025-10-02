@@ -26,11 +26,11 @@
 
 ### A) Absolute units
 
-* **px** — CSS pixel (logical, not hardware).
-  ✅ Hairline borders, crisp 1px rules, icon edges
+* **px** — CSS pixel (logical, not hardware).  
+  ✅ Hairline borders, crisp 1px rules, icon edges  
   ❌ Base body text (hurts scaling)
-* **pt, in, cm, mm, pc** — physical/print units.
-  ✅ Print stylesheets
+* **pt, in, cm, mm, pc** — physical/print units.  
+  ✅ Print stylesheets  
   ⚠️ Unreliable physical mapping on screens
 
 ### B) Font-relative units
