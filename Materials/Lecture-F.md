@@ -121,10 +121,6 @@ These tools make it easier to build complex single-page applications (SPAs), man
 
 ---
 
-Hyvä lisäys 👍 Tämä liittyy olennaisesti moderniin JavaScript-kehitykseen. Tein tähän selityksen **client-side rendering (CSR)** ja **server-side rendering (SSR)** -käsitteistä, esimerkit molemmista sekä hybridimallista. Lopuksi käytännön esimerkkiskenaariot.
-
----
-
 # 🖥️ Client-Side vs Server-Side Rendering
 
 ## 🧭 Server-Side Rendering (SSR)
