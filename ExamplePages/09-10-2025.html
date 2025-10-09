@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Input Types Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      padding: 8px;
+      width: 300px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Input Types</h1>
+
+  <div class="input-group">
+    <label for="textInput">Text:</label>
+    <input type="text" id="textInput" placeholder="Enter text">
+  </div>
+
+  <div class="input-group">
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" placeholder="Enter email">
+  </div>
+
+  <div class="input-group">
+    <label for="numberInput">Number:</label>
+    <input type="number" id="numberInput" placeholder="Enter number">
+  </div>
+
+  <div class="input-group">
+    <label for="dateInput">Date:</label>
+    <input type="date" id="dateInput">
+  </div>
+
+  <div class="input-group">
+    <label for="colorInput">Color:</label>
+    <input type="color" id="colorInput">
+  </div>
+
+  <div class="input-group">
+    <label for="fileInput">File:</label>
+    <input type="file" id="fileInput">
+  </div>
+
+  <div class="input-group">
+    <label for="rangeInput">Range:</label>
+    <input type="range" id="rangeInput" min="0" max="100">
+  </div>
+
+  <button onclick="logInputs()">Log Inputs</button>
+
+  <script>
+    function logInputs() {
+      console.log("Text:", document.getElementById("textInput").value);
+      console.log("Email:", document.getElementById("emailInput").value);
+      console.log("Number:", document.getElementById("numberInput").value);
+      console.log("Date:", document.getElementById("dateInput").value);
+      console.log("Color:", document.getElementById("colorInput").value);
+      console.log("File:", document.getElementById("fileInput").files[0]?.name || "No file selected");
+      console.log("Range:", document.getElementById("rangeInput").value);
+    }
+  </script>
+
+</body>
+</html>
