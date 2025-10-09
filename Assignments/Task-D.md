@@ -53,12 +53,12 @@
 
 4. In `style.css`, use the following types of selectors to style your content:
 
-   * **Element selectors** (e.g., `h1`, `p`)
-   * **Class selectors** (e.g., `.box`, `.highlight`)
-   * **ID selector** (e.g., `#special-message`)
-   * **Group selectors** (e.g., `h1, h2, h3`)
-   * **Descendant selectors** (e.g., `section ul li`)
-   * **Attribute selectors** (e.g., `a[target="_blank"]`, `img[alt]`)
+   * **Element selectors** (You must use these: `h1`, `p`)
+   * **Class selectors** (You must use these:  `.box`, `.highlight`)
+   * **ID selector** (You must use these:  `#special-message`)
+   * **Group selectors** (You must use these:  `h1, h2, h3`)
+   * **Descendant selectors** (You must use these:  `section ul li`)
+   * **Attribute selectors** (You must use these:  `a[target="_blank"]`, `img[alt]`)
 
 
 5. **Link the CSS file** in the HTML `<head>` section:
