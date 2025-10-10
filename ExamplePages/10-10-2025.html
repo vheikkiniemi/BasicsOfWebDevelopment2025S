@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lomake ja tulostus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form, #tulokset {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #tulokset p {
+      margin: 5px 0;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const lomake = document.getElementById("rekisterointiLomake");
+
+      lomake.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nimi = document.getElementById("nimi").value;
+        const email = document.getElementById("email").value;
+        const salasana = document.getElementById("salasana").value;
+        const syntymapaiva = document.getElementById("syntymapaiva").value;
+        const ehdot = document.getElementById("ehdot").checked ? "Hyväksytty" : "Ei hyväksytty";
+
+        document.getElementById("tulosNimi").textContent = "Nimi: " + nimi;
+        document.getElementById("tulosEmail").textContent = "Sähköposti: " + email;
+        document.getElementById("tulosSalasana").textContent = "Salasana: " + salasana;
+        document.getElementById("tulosSyntymapaiva").textContent = "Syntymäpäivä: " + syntymapaiva;
+        document.getElementById("tulosEhdot").textContent = "Käyttöehdot: " + ehdot;
+
+        document.getElementById("tulokset").style.display = "block";
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <h1>Rekisteröitymislomake</h1>
+  <form id="rekisterointiLomake">
+    <label for="nimi">Nimi:</label>
+    <input type="text" id="nimi" name="nimi" required>
+
+    <label for="email">Sähköposti:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="salasana">Salasana:</label>
+    <input type="password" id="salasana" name="salasana" required>
+
+    <label for="syntymapaiva">Syntymäpäivä:</label>
+    <input type="date" id="syntymapaiva" name="syntymapaiva">
+
+    <label>
+      <input type="checkbox" id="ehdot" name="ehdot" required>
+      Hyväksyn käyttöehdot
+    </label>
+
+    <input type="submit" value="Lähetä">
+  </form>
+
+  <div id="tulokset" style="display:none;">
+    <h2>Syötetyt tiedot</h2>
+    <p id="tulosNimi"></p>
+    <p id="tulosEmail"></p>
+    <p id="tulosSalasana"></p>
+    <p id="tulosSyntymapaiva"></p>
+    <p id="tulosEhdot"></p>
+  </div>
+
+</body>
+</html>
