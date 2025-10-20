@@ -4,7 +4,12 @@
 > The material was created with the help of ChatGPT and Copilot.
 
 * **Starter page:** [https://vheikkiniemi.github.io/BasicsOfWeb2025SPages/task-f/](https://vheikkiniemi.github.io/BasicsOfWeb2025SPages/task-f/)  
-* **Target behavior (and general look):** ![reference page](image.png)
+* **Target behavior (and general look):**
+
+> [!NOTE]
+> The course shown in the image has been added. By default, there are no courses on the page.
+
+![reference page](image.png)
 
 ## 🎯 Objectives
 
