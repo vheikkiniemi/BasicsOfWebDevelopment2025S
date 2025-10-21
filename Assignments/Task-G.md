@@ -39,7 +39,7 @@
 
 ---
 
-## 📁 File structure (recommended)
+## 📁 File structure
 
 ```
 task-g/
@@ -60,7 +60,6 @@ task-g/
 * **Terms checkbox** must be required to submit.
 * Each valid submit **adds a row** at the **end** of the table `<tbody>`.
 * No page reload is needed for adding rows.
-* HTML/CSS/JS are **separate** files and logically organized.
 * Page is **published** on GitHub Pages; the URL opens with HTTP 200.
 
 ---
