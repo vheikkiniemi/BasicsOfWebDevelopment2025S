@@ -197,6 +197,8 @@ form.addEventListener('submit', async (e) => {
 
 👉 HTML forms remain one of the **most fundamental** pieces of the web — simple, powerful, and endlessly adaptable. Whether used for classic submissions or API-driven apps, they connect users to the web’s core purpose: **communication and interaction**. 🌐💬
 
+---
+
 # ✅ Input Validation in Web Forms
 
 Input validation is one of the **most important parts** of any web application — it protects systems from incorrect, incomplete, or even malicious data. Let’s explore **why** it’s done, **how** it can be implemented, and **what the trade-offs** are between different approaches.
@@ -393,13 +395,15 @@ form.addEventListener('submit', async (e) => {
 </script>
 ```
 
-✅ Browser checks inputs instantly
-✅ Server confirms validity before saving
-✅ User receives feedback either way
+* Browser checks inputs instantly
+* Server confirms validity before saving
+* User receives feedback either way
 
 ---
 
 👉  **Client validation enhances usability — server validation ensures trust.** Together, they form the **foundation of secure, reliable web applications.**
+
+---
 
 # 🧩 HTML Input Types
 
@@ -714,9 +718,9 @@ Stores data that users don’t see or change directly.
 
 ## 🚀 Best Practices
 
-✅ Use **the most specific input type** available (e.g., `email` instead of `text`).
-✅ Add **`required`, `min`, `max`, and `pattern`** to improve data quality.
-✅ Combine **HTML5 validation** with **server-side checks**.
-✅ Ensure all inputs have **labels** and clear purpose.
-✅ Use `autocomplete` wisely to improve UX (`autocomplete="email"`, `"given-name"`, etc.).
-✅ Make forms keyboard- and screen-reader-friendly
+* Use **the most specific input type** available (e.g., `email` instead of `text`).
+* Add **`required`, `min`, `max`, and `pattern`** to improve data quality.
+* Combine **HTML5 validation** with **server-side checks**.
+* Ensure all inputs have **labels** and clear purpose.
+* Use `autocomplete` wisely to improve UX (`autocomplete="email"`, `"given-name"`, etc.).
+* Make forms keyboard- and screen-reader-friendly
