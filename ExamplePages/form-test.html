@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe Form</title>
+  <link rel="stylesheet" href="form-test.css" />
+  <script src="form-test.js" defer></script>
+</head>
+<body>
+  <form id="subscriptionForm" action="https://httpbin.org/post" method="post" autocomplete="on" novalidate>
+    <fieldset>
+      <legend>Subscribe to Our Service</legend>
+
+      <div class="form-group">
+        <label for="email">📧 Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          aria-required="true"
+          aria-describedby="emailHelp"
+          placeholder="you@example.com"
+        />
+        <small id="emailHelp" class="form-text">We'll never share your email.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="plan">💼 Plan</label>
+        <select id="plan" name="plan" required aria-required="true">
+          <option value="">Choose…</option>
+          <option value="basic">Basic</option>
+          <option value="pro">Pro</option>
+        </select>
+      </div>
+
+      <button type="submit">Subscribe ✅</button>
+    </fieldset>
+  </form>
+</body>
+</html>
