@@ -201,10 +201,6 @@ form.addEventListener('submit', async (e) => {
 
 # ✅ Input Validation in Web Forms
 
-Input validation is one of the **most important parts** of any web application — it protects systems from incorrect, incomplete, or even malicious data. Let’s explore **why** it’s done, **how** it can be implemented, and **what the trade-offs** are between different approaches.
-
----
-
 ## 💡 Why validation is needed
 
 1. **Data integrity**
@@ -406,8 +402,6 @@ form.addEventListener('submit', async (e) => {
 ---
 
 # 🧩 HTML Input Types
-
-HTML provides a wide range of **input types** for collecting user data — from simple text fields to date pickers and file uploads. Choosing the **right type** improves usability, accessibility, and data accuracy.
 
 Below you’ll find an overview of common input types, **their purpose**, and **recommended attributes and validation techniques**.
 
