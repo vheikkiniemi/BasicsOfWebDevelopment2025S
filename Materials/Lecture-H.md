@@ -51,7 +51,7 @@ This gives immediate feedback in the browser and reduces context switching betwe
 | **Performance**         | Very fast (purged build)    | Medium                                   | Medium    | Medium          |
 | **Popularity (GitHub)** | ⭐ 80k+                      | ⭐ 160k+ (but older)                      | ⭐ 45k+    | ⭐ 30k+          |
 
-🔍 **Summary:**
+## 💡 **Summary:**
 
 * **Bootstrap** is great for quick prototypes with a consistent look.
 * **Bulma** offers a modern, readable syntax.
@@ -62,13 +62,13 @@ This gives immediate feedback in the browser and reduces context switching betwe
 
 ## 🪄 4. Advantages of Tailwind CSS
 
-✅ **Custom design without writing CSS**
-✅ **Responsive and mobile-first** built-in
-✅ **Dark mode** and **theme switching** support
-✅ **Built-in pseudo-classes** (`hover:`, `focus:`, `active:`)
-✅ **Integration with frameworks** like React, Vue, Next.js, and Svelte
-✅ **Plugin ecosystem** (forms, typography, aspect-ratio, etc.)
-✅ **Fast build tools** like Tailwind CLI and PostCSS integration
+✅ **Custom design without writing CSS**  
+✅ **Responsive and mobile-first** built-in   
+✅ **Dark mode** and **theme switching** support  
+✅ **Built-in pseudo-classes** (`hover:`, `focus:`, `active:`)  
+✅ **Integration with frameworks** like React, Vue, Next.js, and Svelte  
+✅ **Plugin ecosystem** (forms, typography, aspect-ratio, etc.)  
+✅ **Fast build tools** like Tailwind CLI and PostCSS integration  
 
 ### 💡 4.1. Tailwind compared to plain HTML and CSS
 
@@ -89,10 +89,10 @@ In short:
 
 ## ⚡ 5. Disadvantages and Criticism
 
-🚫 **HTML clutter**: Many classes can make markup hard to read.
-🚫 **Learning curve**: Requires learning Tailwind’s class system.
-🚫 **Initial setup**: Needs a build process (PostCSS, Vite, or Webpack).
-🚫 **Non-semantic style**: Visual styles appear in HTML, not in CSS files.
+🚫 **HTML clutter**: Many classes can make markup hard to read.  
+🚫 **Learning curve**: Requires learning Tailwind’s class system.  
+🚫 **Initial setup**: Needs a build process (PostCSS, Vite, or Webpack).  
+🚫 **Non-semantic style**: Visual styles appear in HTML, not in CSS files.  
 
 However, these are often outweighed by its productivity and flexibility benefits.
 
@@ -155,7 +155,7 @@ This entire design is created **without writing a single line of custom CSS**.
 
 ---
 
-## 💡 9. Summary
+## 💡 **Summary:**
 
 | Tailwind Strengths        | When to Use                 |
 | ------------------------- | --------------------------- |
@@ -166,17 +166,13 @@ This entire design is created **without writing a single line of custom CSS**.
 
 ---
 
-Excellent 👍 Let’s explain **Tailwind via CDN import** — perfect for early learning and small projects.
-
----
-
 # 🌐 **Using Tailwind CSS with a CDN**
 
 When you start learning Tailwind CSS, the easiest way to use it is by adding a **CDN link** directly into your HTML file — no installation or build tools needed.
 
 ---
 
-## ⚙️ **1. What is a CDN?**
+## ⚙️ 1. What is a CDN?
 
 **CDN (Content Delivery Network)** is a system of distributed servers that deliver content (like CSS or JavaScript files) quickly to users around the world.
 Using a CDN means:
@@ -187,7 +183,7 @@ Using a CDN means:
 
 ---
 
-## 🧩 **2. How to Use Tailwind via CDN**
+## 🧩 2. How to Use Tailwind via CDN
 
 Just add the following `<script>` tag in your HTML `<head>` section:
 
@@ -212,7 +208,7 @@ Your page is now styled using Tailwind without any local setup.
 
 ---
 
-## 🧠 **3. Why Use CDN in the Beginning**
+## 🧠 3. Why Use CDN in the Beginning
 
 * 🧱 **Perfect for learning and demos** – No need for Node.js or build tools.
 * 🚀 **Instant setup** – Just one line of code and you’re ready to style.
@@ -221,7 +217,7 @@ Your page is now styled using Tailwind without any local setup.
 
 ---
 
-## ⚠️ **4. Limitations**
+## ⚠️ 4. Limitations
 
 * ❌ **Not suitable for production** (the CSS file is large and not optimized).
 * ❌ **Cannot customize** the default Tailwind config (`tailwind.config.js`).
@@ -229,7 +225,7 @@ Your page is now styled using Tailwind without any local setup.
 
 ---
 
-## 💬 **5. Summary**
+## 💡 **Summary:**
 
 | Situation                             | Recommended Approach                   |
 | ------------------------------------- | -------------------------------------- |
@@ -241,10 +237,7 @@ Your page is now styled using Tailwind without any local setup.
 
 👉 **In short:**
 
-> The CDN method is the easiest way to start using Tailwind CSS — perfect for beginners and classroom learning before moving to a full build environment.
-
-
-Here’s a clear **summary of Tailwind CSS class categories** and the **most commonly used utility classes**, perfect for student reference 📘
+> The CDN method is the easiest way to start using Tailwind CSS.
 
 ---
 
@@ -255,7 +248,7 @@ Each class has a **specific, single purpose** — you combine them to create ful
 
 ---
 
-## 🧱 **1. Layout & Display**
+## 🧱 1. Layout & Display
 
 These classes control the **structure** of the page — how elements are arranged or sized.
 
@@ -278,7 +271,7 @@ These classes control the **structure** of the page — how elements are arrange
 
 ---
 
-## 📏 **2. Spacing (Margin & Padding)**
+## 📏 2. Spacing (Margin & Padding)
 
 Tailwind uses a **scale system** (`0, 1, 2, 4, 8, 16...`) for consistent spacing.
 
@@ -296,7 +289,7 @@ Tailwind uses a **scale system** (`0, 1, 2, 4, 8, 16...`) for consistent spacing
 
 ---
 
-## 🎨 **3. Colors & Backgrounds**
+## 🎨 3. Colors & Backgrounds
 
 Tailwind includes an extensive **color palette** with shades from 50 to 900.
 
@@ -317,7 +310,7 @@ Tailwind includes an extensive **color palette** with shades from 50 to 900.
 
 ---
 
-## 🖋️ **4. Typography**
+## 🖋️ 4. Typography
 
 Controls font size, weight, alignment, and spacing.
 
@@ -338,7 +331,7 @@ Controls font size, weight, alignment, and spacing.
 
 ---
 
-## 🔲 **5. Borders, Radius & Shadows**
+## 🔲 5. Borders, Radius & Shadows
 
 | Feature       | Examples                                | Description      |
 | ------------- | --------------------------------------- | ---------------- |
@@ -355,7 +348,7 @@ Controls font size, weight, alignment, and spacing.
 
 ---
 
-## 📱 **6. Responsiveness**
+## 📱 6. Responsiveness
 
 Tailwind uses **breakpoint prefixes** to adapt styles for different screen sizes.
 
@@ -377,7 +370,7 @@ Tailwind uses **breakpoint prefixes** to adapt styles for different screen sizes
 
 ---
 
-## 🌓 **7. State Variants**
+## 🌓 7. State Variants
 
 Tailwind uses **pseudo-class prefixes** for interactive or conditional styling.
 
@@ -391,7 +384,7 @@ Tailwind uses **pseudo-class prefixes** for interactive or conditional styling.
 
 ---
 
-## 🔧 **8. Other Useful Categories**
+## 🔧 8. Other Useful Categories
 
 | Category       | Examples                                    | Description      |
 | -------------- | ------------------------------------------- | ---------------- |
@@ -403,7 +396,7 @@ Tailwind uses **pseudo-class prefixes** for interactive or conditional styling.
 
 ---
 
-## 🧠 **9. Most Commonly Used Tailwind Classes**
+## 🧠 9. Most Commonly Used Tailwind Classes
 
 | Category       | Example Classes                                           |
 | -------------- | --------------------------------------------------------- |
@@ -416,7 +409,7 @@ Tailwind uses **pseudo-class prefixes** for interactive or conditional styling.
 
 ---
 
-## 💬 **Summary**
+## 💡 **Summary:**
 
 > Tailwind CSS groups its utilities by purpose — layout, spacing, color, typography, and more.
 > The key idea is to **build custom designs quickly** by combining **small, descriptive classes**.
@@ -431,7 +424,7 @@ In practice, you’ll mostly use:
 
 ---
 
-# ⚙️ Building the semantic Tailwind page →  step-by-step 
+# ⚙️ **Building the semantic Tailwind page →  step-by-step **
 
 ## 0) Project Setup
 
@@ -734,7 +727,7 @@ In practice, you’ll mostly use:
 
 ---
 
-## 🌗 **1. How Dark Mode Works in Tailwind**
+## 🌗 1. How Dark Mode Works in Tailwind
 
 Tailwind has two main dark mode strategies:
 
@@ -747,7 +740,7 @@ Since we’re using the **CDN version**, the easiest approach is the **class-bas
 
 ---
 
-## ⚙️ **2. Enabling Dark Mode via CDN**
+## ⚙️ 2. Enabling Dark Mode via CDN
 
 When using Tailwind via CDN, you can configure dark mode in a short inline script before the `<script src="https://cdn.tailwindcss.com"></script>` line:
 
@@ -764,7 +757,7 @@ This tells Tailwind to activate dark mode when a `dark` class is present on the 
 
 ---
 
-## 💡 **3. Example HTML: Toggle Between Light and Dark Mode**
+## 💡 3. Example HTML: Toggle Between Light and Dark Mode
 
 Here’s a minimal demo you can test right away 👇
 
@@ -803,7 +796,7 @@ Here’s a minimal demo you can test right away 👇
 
 ---
 
-## 🧪 **4. How to Test**
+## 🧪 4. How to Test
 
 1. Open the file in your browser.
 2. Click the **“Toggle Dark Mode”** button.
@@ -811,7 +804,7 @@ Here’s a minimal demo you can test right away 👇
 
 ---
 
-## 🎨 **5. Key Concepts Shown**
+## 🎨 5. Key Concepts Shown
 
 | Feature                          | Example                         | Effect                                      |
 | -------------------------------- | ------------------------------- | ------------------------------------------- |
@@ -823,10 +816,171 @@ Here’s a minimal demo you can test right away 👇
 
 ---
 
-## ✅ **6. Summary**
+## 💡 **Summary:**
 
 * Tailwind dark mode is **built-in** — you only define how it’s triggered (`media` or `class`).
 * You can style both themes **in the same element** with `dark:` prefix.
 * Ideal for modern sites and apps where users expect theme switching.
 
 ---
+
+# 🚀 **JavaScript validation with custom error messages**
+
+Validation uses the browser’s Constraint Validation API (`checkValidity`, `setCustomValidity`, `reportValidity`) plus **inline error text** with `aria-live` for accessibility.
+
+---
+
+## 🔧 HTML (replace your Contact section with this)
+
+```html
+<section id="contact" aria-labelledby="contact-title" class="mt-8">
+  <h3 id="contact-title" class="text-lg font-semibold">Contact us</h3>
+
+  <!-- Add novalidate to suppress default browser popups -->
+  <form id="contactForm" class="mt-4 space-y-4" action="#" method="post" novalidate>
+    <div>
+      <label for="name" class="block text-sm font-medium">Name</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        autocomplete="name"
+        required
+        minlength="2"
+        pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$"
+        aria-describedby="nameError"
+        data-error-target="nameError"
+        class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <!-- Inline error region (initially hidden) -->
+      <p id="nameError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+        aria-describedby="emailError"
+        data-error-target="emailError"
+        class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <p id="emailError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
+    </div>
+
+    <button
+      type="submit"
+      class="inline-flex items-center rounded bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+    >
+      Send
+    </button>
+
+    <!-- Optional success message area -->
+    <p id="formSuccess" class="mt-3 text-sm text-green-700 hidden" aria-live="polite"></p>
+  </form>
+</section>
+```
+
+---
+
+## 🧠 JS (add near the end of the page, before `</body>`)
+
+```html
+<script>
+  (function () {
+    const form = document.getElementById('contactForm');
+    const fields = ['name', 'email'].map(id => document.getElementById(id));
+
+    // Utility to show/hide custom error text + style field
+    function setError(input, message = '') {
+      const errorId = input.getAttribute('data-error-target');
+      const errorEl = errorId ? document.getElementById(errorId) : null;
+
+      // Set browser's internal message (used by reportValidity)
+      input.setCustomValidity(message);
+
+      // Toggle inline error
+      if (errorEl) {
+        if (message) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+          // Add red ring/border via Tailwind utilities
+          input.classList.add('ring-2', 'ring-red-500', 'border-red-500');
+        } else {
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+          input.classList.remove('ring-2', 'ring-red-500', 'border-red-500');
+        }
+      }
+    }
+
+    // Field-specific validators
+    function validateName() {
+      const input = document.getElementById('name');
+      const value = input.value.trim();
+
+      if (!value) return setError(input, 'Please enter your name.');
+      if (value.length < 2) return setError(input, 'Name must be at least 2 characters.');
+      // Pattern matches letters/spaces/hyphens/apostrophes; tweak to your locale as needed
+      const re = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$/;
+      if (!re.test(value)) return setError(input, 'Only letters, spaces, hyphens, and apostrophes are allowed.');
+
+      return setError(input, ''); // clear
+    }
+
+    function validateEmail() {
+      const input = document.getElementById('email');
+      const value = input.value.trim();
+
+      if (!value) return setError(input, 'Please enter your email address.');
+      // type="email" already checks format; this gives a friendlier message
+      if (!input.checkValidity()) return setError(input, 'Please provide a valid email, e.g., name@example.com.');
+
+      return setError(input, '');
+    }
+
+    // Wire up live validation
+    document.getElementById('name').addEventListener('input', validateName);
+    document.getElementById('name').addEventListener('blur', validateName);
+
+    document.getElementById('email').addEventListener('input', validateEmail);
+    document.getElementById('email').addEventListener('blur', validateEmail);
+
+    // On submit: validate all, focus first invalid, block submission if any invalid
+    form.addEventListener('submit', (e) => {
+      const validators = [validateName, validateEmail];
+      validators.forEach(fn => fn());
+
+      // If any field is invalid, prevent submission and show built-in bubble near the field
+      const firstInvalid = fields.find(f => !f.checkValidity());
+      if (firstInvalid) {
+        e.preventDefault();
+        firstInvalid.reportValidity();    // shows native tooltip near the field
+        firstInvalid.focus({ preventScroll: false });
+        return;
+      }
+
+      // Simulate success (since action="#" and we’re not posting anywhere)
+      e.preventDefault();
+      const ok = document.getElementById('formSuccess');
+      ok.textContent = 'Thanks! Your message was validated and would be submitted now.';
+      ok.classList.remove('hidden');
+      form.reset();
+      // Optional: remove error styles after reset
+      fields.forEach(f => setError(f, ''));
+    });
+  })();
+</script>
+```
+
+---
+
+## 💬 What we get
+
+* **Custom messages** (friendly and specific) shown inline + via `reportValidity()`.
+* **Accessible feedback**: error `<p>` elements use `aria-live="polite"`.
+* **Clear visuals**: invalid fields get a red ring/border using Tailwind utilities.
+* **Progressive enhancement**: if JS fails, basic required/type checks still work when you remove `novalidate`.
