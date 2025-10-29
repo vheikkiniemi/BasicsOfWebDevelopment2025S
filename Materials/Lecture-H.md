@@ -470,7 +470,7 @@ In practice, you’ll mostly use:
 ## 2) Header + Primary Navigation
 
 **Goal**: Add semantic header with a nav list.
-**Add code** below the skip link:
+**Add code** below the link (e.g. tag `</a>`):
 
 ```html
 <header class="border-b bg-white">
@@ -480,7 +480,7 @@ In practice, you’ll mostly use:
       <a href="/" class="text-xl font-bold">Basics of Web Development</a>
     </div>
 
-    <nav aria-label="Päävalikko">
+    <nav aria-label="Main menu">
       <ul class="flex gap-6">
         <li><a href="#" class="hover:underline" aria-current="page">Home</a></li>
         <li><a href="#topics" class="hover:underline">Topics</a></li>
