@@ -676,27 +676,27 @@ In practice, you’ll mostly use:
 
 **Add nothing** — perform checks:
 
-1. **Keyboard Navigation**
+**1. Keyboard Navigation**
 
 * `Tab` from top: Skip link → header links (in order) → main content → article → aside → form → footer.
 * **Expected**: No keyboard traps; visible focus styles on interactive elements.
 
-2. **Image Alt & Figure**
+**2. Image Alt & Figure**
 
 * Right-click → Inspect the image; confirm it has `alt` text and sits inside `figure/figcaption`.
 * **Expected**: Screen readers can announce it meaningfully.
 
-3. **Responsive**
+**3. Responsive**
 
 * Open DevTools → Toggle device toolbar → test iPhone/Pixel widths.
 * **Expected**: Stacks to one column on small screens; two columns from `md`.
 
-4. **Heading Outline**
+**4. Heading Outline**
 
 * Check headings: one `h1`, then `h2` (article/aside titles), then `h3` (section headings).
 * **Expected**: Logical, nested structure.
 
-5. **Basic Performance** (optional)
+**5. Basic Performance** (optional)
 
 * Run Lighthouse (Chrome DevTools → Lighthouse → Accessibility + Best Practices).
 * **Expected**: High a11y score (typically 95–100 for this structure).
