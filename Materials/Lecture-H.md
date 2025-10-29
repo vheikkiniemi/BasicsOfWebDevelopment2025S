@@ -470,7 +470,7 @@ In practice, you’ll mostly use:
 ## 2) Header + Primary Navigation
 
 **Goal**: Add semantic header with a nav list.
-**Add code** below the link (e.g. tag `</a>`):
+**Add code** below the link (tag `</a>`):
 
 ```html
 <header class="border-b bg-white">
@@ -504,7 +504,7 @@ In practice, you’ll mostly use:
 ## 3) Main Landmark + Hero Section
 
 **Goal**: Provide an `<main>` region and a strong page title.
-**Add code** below the header:
+**Add code** below the header (tag `</header>`):
 
 ```html
 <main id="main" class="mx-auto max-w-5xl px-4 py-8">
@@ -523,7 +523,7 @@ In practice, you’ll mostly use:
 **Test**:
 
 * Confirm the big heading is visible.
-* Use the skip link (press `Tab` then `Enter` on “Siirry sisältöön”): focus jumps to main.
+* Use the skip link (press `Tab` then `Enter` on “Move to content”): focus jumps to main.
 
 **Expected**: Large title, paragraph under it, proper keyboard jump.
 
@@ -532,7 +532,7 @@ In practice, you’ll mostly use:
 ## 4) Content Grid: Article + Aside
 
 **Goal**: Create a two-column layout (content + complementary info).
-**Add code** inside `<main>` **after** the hero section:
+**Add code** inside `<main>` **after** the hero section (tag `</section>`):
 
 ```html
 <div class="grid gap-8 md:grid-cols-[2fr_1fr]">
@@ -604,7 +604,7 @@ In practice, you’ll mostly use:
 ## 5) Contact Form (Inside Aside)
 
 **Goal**: Add a semantic, labeled, accessible form.
-**Add code** **inside the `<aside>`** after the definition list:
+**Add code** **inside the `<aside>`** after the definition list  (tag `</dl>`):
 
 ```html
 <section id="contact" aria-labelledby="contact-title" class="mt-8">
@@ -679,27 +679,27 @@ In practice, you’ll mostly use:
 1. **Keyboard Navigation**
 
 * `Tab` from top: Skip link → header links (in order) → main content → article → aside → form → footer.
-  **Expected**: No keyboard traps; visible focus styles on interactive elements.
+* **Expected**: No keyboard traps; visible focus styles on interactive elements.
 
 2. **Image Alt & Figure**
 
 * Right-click → Inspect the image; confirm it has `alt` text and sits inside `figure/figcaption`.
-  **Expected**: Screen readers can announce it meaningfully.
+* **Expected**: Screen readers can announce it meaningfully.
 
 3. **Responsive**
 
 * Open DevTools → Toggle device toolbar → test iPhone/Pixel widths.
-  **Expected**: Stacks to one column on small screens; two columns from `md`.
+* **Expected**: Stacks to one column on small screens; two columns from `md`.
 
 4. **Heading Outline**
 
 * Check headings: one `h1`, then `h2` (article/aside titles), then `h3` (section headings).
-  **Expected**: Logical, nested structure.
+* **Expected**: Logical, nested structure.
 
 5. **Basic Performance** (optional)
 
 * Run Lighthouse (Chrome DevTools → Lighthouse → Accessibility + Best Practices).
-  **Expected**: High a11y score (typically 95–100 for this structure).
+* **Expected**: High a11y score (typically 95–100 for this structure).
 
 ---
 
