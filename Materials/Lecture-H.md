@@ -191,8 +191,8 @@ Just add the following `<script>` tag in your HTML `<head>` section:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Tailwind via CDN</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -476,7 +476,7 @@ In practice, you’ll mostly use:
 <header class="border-b bg-white">
   <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <img src="https://placehold.co/40x40" width="40" height="40" alt="Sivuston logo" class="rounded" />
+      <img src="https://placehold.co/40x40" width="40" height="40" alt="Sivuston logo" class="rounded" >
       <a href="/" class="text-xl font-bold">Basics of Web Development</a>
     </div>
 
@@ -552,7 +552,7 @@ In practice, you’ll mostly use:
         src="https://placehold.co/800x360"
         alt="Illustration of page regions: header, nav, main, aside, footer"
         class="w-full rounded"
-        width="800" height="360" />
+        width="800" height="360" >
       <figcaption class="mt-2 text-sm text-gray-600">
         Figure: Landmark regions help users navigate quickly.
       </figcaption>
@@ -613,12 +613,12 @@ In practice, you’ll mostly use:
     <div>
       <label for="name" class="block text-sm font-medium">Name</label>
       <input id="name" name="name" type="text" required
-             class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+             class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
     </div>
     <div>
       <label for="email" class="block text-sm font-medium">Email</label>
       <input id="email" name="email" type="email" required
-             class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+             class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
     </div>
     <button type="submit"
             class="inline-flex items-center rounded bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
@@ -875,7 +875,7 @@ Validation uses the browser’s Constraint Validation API (`checkValidity`, `set
         aria-describedby="nameError"
         data-error-target="nameError"
         class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
+      >
       <!-- Inline error region (initially hidden) -->
       <p id="nameError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
     </div>
@@ -891,7 +891,7 @@ Validation uses the browser’s Constraint Validation API (`checkValidity`, `set
         aria-describedby="emailError"
         data-error-target="emailError"
         class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
+      >
       <p id="emailError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
     </div>
 
