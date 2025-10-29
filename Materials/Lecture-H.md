@@ -458,12 +458,12 @@ In practice, you’ll mostly use:
 
 ```html
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white border rounded px-3 py-2">
-  Siirry sisältöön
+  Move to content
 </a>
 ```
 
 **Test**: Press `Tab` once on the page.
-**Expected**: A small “Siirry sisältöön” button appears top-left.
+**Expected**: A small “Move to content” button appears top-left.
 
 ---
 
