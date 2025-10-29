@@ -435,10 +435,10 @@ In practice, you’ll mostly use:
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Semantic Demo | Tailwind via CDN</title>
-  <meta name="description" content="A minimal, semantic, and accessible HTML page using Tailwind CSS via CDN." />
+  <meta name="description" content="A minimal, semantic, and accessible HTML page using Tailwind CSS via CDN.">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -761,8 +761,8 @@ Here’s a minimal demo you can test right away 👇
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tailwind Dark Mode — Fixed Toggle</title>
 
   <!-- 1) Early boot: decide theme BEFORE Tailwind loads -->
