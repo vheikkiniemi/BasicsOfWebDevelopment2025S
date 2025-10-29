@@ -871,7 +871,7 @@ Validation uses the browser’s Constraint Validation API (`checkValidity`, `set
         autocomplete="name"
         required
         minlength="2"
-        pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$"
+        pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' \-]{2,}$"
         aria-describedby="nameError"
         data-error-target="nameError"
         class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -958,6 +958,7 @@ Validation uses the browser’s Constraint Validation API (`checkValidity`, `set
     function validateEmail() {
       const input = document.getElementById('email');
       const value = input.value.trim();
+      setError(input, '');
 
       if (!value) return setError(input, 'Please enter your email address.');
       // type="email" already checks format; this gives a friendlier message
