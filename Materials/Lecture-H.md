@@ -742,15 +742,11 @@ Since we’re using the **CDN version**, the easiest approach is the **class-bas
 
 ## ⚙️ 2. Enabling Dark Mode via CDN
 
-When using Tailwind via CDN, you can configure dark mode in a short inline script before the `<script src="https://cdn.tailwindcss.com"></script>` line:
+When using Tailwind via CDN, you can configure dark mode in a short inline script after the `<script src="https://cdn.tailwindcss.com"></script>` line:
 
 ```html
-<script>
-  tailwind.config = {
-    darkMode: 'class'
-  }
-</script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { darkMode: 'class' };</script>
 ```
 
 This tells Tailwind to activate dark mode when a `dark` class is present on the root element.
@@ -763,32 +759,60 @@ Here’s a minimal demo you can test right away 👇
 
 ```html
 <!DOCTYPE html>
-<html lang="en" class="dark"> <!-- 👈 Try removing or toggling this -->
+<html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Dark Mode Example</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tailwind Dark Mode — Fixed Toggle</title>
+
+  <!-- 1) Early boot: decide theme BEFORE Tailwind loads -->
   <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
+    (function () {
+      const KEY = 'color-scheme';
+      const saved = localStorage.getItem(KEY);                 // 'dark' | 'light' | null
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const useDark = saved ? saved === 'dark' : prefersDark;  // default to OS if not saved
+      document.documentElement.classList.toggle('dark', useDark);
+      // optional: expose helper for debugging
+      window.__theme = { KEY, get: () => localStorage.getItem(KEY) };
+    })();
   </script>
+
+  <!-- 2) Load CDN, then tell Tailwind to use class-based dark mode -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
 </head>
-<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
-  <main class="p-8 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-colors duration-500">
-    <h1 class="text-3xl font-bold mb-4">🌞 / 🌙 Dark Mode Example</h1>
-    <p class="mb-6">Toggle dark mode manually using the button below.</p>
-    <button id="toggle" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-      Toggle Dark Mode
+<body class="min-h-screen flex items-center justify-center bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <main class="p-8 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-colors duration-300">
+    <h1 class="text-2xl font-bold mb-4">Dark Mode Toggle (Works ✅)</h1>
+    <p class="mb-6">Click the button to switch between light and dark themes.</p>
+
+    <button id="toggle"
+            type="button"
+            class="rounded border px-4 py-2 bg-gray-50 border-gray-300 hover:bg-gray-100
+                   dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600">
+      Toggle theme
     </button>
   </main>
 
+  <!-- 3) Toggle logic: flip class on <html> + persist -->
   <script>
-    const html = document.documentElement;
-    document.getElementById('toggle').addEventListener('click', () => {
-      html.classList.toggle('dark');
-    });
+    (function () {
+      const KEY = 'color-scheme';
+      const root = document.documentElement;
+      const btn = document.getElementById('toggle');
+
+      function setTheme(isDark) {
+        root.classList.toggle('dark', isDark);
+        localStorage.setItem(KEY, isDark ? 'dark' : 'light');
+      }
+
+      btn.addEventListener('click', () => {
+        const isDark = root.classList.contains('dark');
+        setTheme(!isDark);
+      });
+    })();
   </script>
 </body>
 </html>
