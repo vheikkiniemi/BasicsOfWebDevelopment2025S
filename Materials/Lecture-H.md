@@ -424,7 +424,7 @@ In practice, you’ll mostly use:
 
 ---
 
-# ⚙️ **Building the semantic Tailwind page →  step-by-step **
+# ⚙️ **Building the semantic Tailwind page →  step-by-step**
 
 ## 0) Project Setup
 
