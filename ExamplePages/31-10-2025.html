@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semantic Demo | Tailwind via CDN</title>
+    <meta name="description" content="A minimal, semantic, and accessible HTML page using Tailwind CSS via CDN.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <a href="#main"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white border rounded px-3 py-2">
+        Move to content
+    </a>
+    <header class="border-b bg-white">
+        <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="https://placehold.co/40x40" width="40" height="40" alt="Sivuston logo" class="rounded">
+                <a href="/" class="text-xl font-bold">Basics of Web Development</a>
+            </div>
+
+            <nav aria-label="Main menu">
+                <ul class="flex gap-6">
+                    <li><a href="#" class="hover:underline" aria-current="page">Home</a></li>
+                    <li><a href="#topics" class="hover:underline">Topics</a></li>
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="mx-auto max-w-5xl px-4 py-8">
+        <section aria-labelledby="hero-title" class="mb-10">
+            <h1 id="hero-title" class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Learn Semantic HTML & Tailwind
+            </h1>
+            <p class="mt-3 max-w-prose">
+                This page demonstrates a clean structure using semantic elements:
+                <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>article</strong>,
+                <strong>section</strong>, <strong>aside</strong>, and <strong>footer</strong>.
+            </p>
+        </section>
+        <div class="grid gap-8 md:grid-cols-[2fr_1fr]">
+            <article aria-labelledby="article-title" class="bg-white border rounded-lg shadow-sm p-6">
+                <header class="mb-4">
+                    <h2 id="article-title" class="text-2xl font-bold">Why Semantics Matter</h2>
+                    <p class="text-sm text-gray-600">Published <time datetime="2025-10-28">28 Oct 2025</time></p>
+                </header>
+
+                <p class="mb-4">
+                    Semantic elements provide meaning to both browsers and assistive technologies.
+                    They improve accessibility, SEO, and code maintainability.
+                </p>
+
+                <figure class="my-6">
+                    <img src="https://placehold.co/800x360"
+                        alt="Illustration of page regions: header, nav, main, aside, footer" class="w-full rounded"
+                        width="800" height="360">
+                    <figcaption class="mt-2 text-sm text-gray-600">
+                        Figure: Landmark regions help users navigate quickly.
+                    </figcaption>
+                </figure>
+
+                <section id="topics" aria-labelledby="topics-title" class="mt-6">
+                    <h3 id="topics-title" class="text-xl font-semibold">Core Topics</h3>
+                    <ul class="list-disc pl-6 mt-3">
+                        <li>Landmark elements and document outline</li>
+                        <li>Accessible navigation and skip links</li>
+                        <li>Responsive design with utility classes</li>
+                    </ul>
+                </section>
+
+                <footer class="mt-6 pt-4 border-t">
+                    <p class="text-sm text-gray-600">Written by Course Staff</p>
+                </footer>
+            </article>
+
+            <aside aria-labelledby="aside-title" class="bg-white border rounded-lg shadow-sm p-6">
+                <h2 id="aside-title" class="text-xl font-semibold">Quick Facts</h2>
+                <dl class="mt-4 space-y-2">
+                    <div class="flex gap-2">
+                        <dt class="min-w-28 text-gray-600">Approach</dt>
+                        <dd>Utility-first (Tailwind)</dd>
+                    </div>
+                    <div class="flex gap-2">
+                        <dt class="min-w-28 text-gray-600">Responsive</dt>
+                        <dd>Mobile-first breakpoints</dd>
+                    </div>
+                    <div class="flex gap-2">
+                        <dt class="min-w-28 text-gray-600">A11y</dt>
+                        <dd>Landmarks, labels, focus states</dd>
+                    </div>
+                </dl>
+                <section id="contact" aria-labelledby="contact-title" class="mt-8">
+                    <h3 id="contact-title" class="text-lg font-semibold">Contact us</h3>
+
+                    <!-- Add novalidate to suppress default browser popups -->
+                    <form id="contactForm" class="mt-4 space-y-4" action="#" method="post" novalidate>
+                        <div>
+                            <label for="name" class="block text-sm font-medium">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required minlength="2"
+                                pattern="^[A-Za-zÀ-ÖØ-öø-ÿ' \-]{2,}$" aria-describedby="nameError"
+                                data-error-target="nameError"
+                                class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <!-- Inline error region (initially hidden) -->
+                            <p id="nameError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required
+                                aria-describedby="emailError" data-error-target="emailError"
+                                class="mt-1 w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <p id="emailError" class="mt-1 text-sm text-red-600 hidden" aria-live="polite"></p>
+                        </div>
+
+                        <button type="submit"
+                            class="inline-flex items-center rounded bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
+                            Send
+                        </button>
+
+                        <!-- Optional success message area -->
+                        <p id="formSuccess" class="mt-3 text-sm text-green-700 hidden" aria-live="polite"></p>
+                    </form>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <footer class="mt-12 border-t bg-white">
+        <div class="mx-auto max-w-5xl px-4 py-6">
+            <address class="not-italic text-sm text-gray-600">
+                Basics of Web Development · Centria UAS · Kokkola, Finland
+            </address>
+            <p class="text-sm text-gray-600 mt-2">
+                © <span id="year"></span> Course Materials. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Non-critical enhancement
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            const fields = ['name', 'email'].map(id => document.getElementById(id));
+
+            // Utility to show/hide custom error text + style field
+            function setError(input, message = '') {
+                const errorId = input.getAttribute('data-error-target');
+                const errorEl = errorId ? document.getElementById(errorId) : null;
+
+                // Set browser's internal message (used by reportValidity)
+                input.setCustomValidity(message);
+
+                // Toggle inline error
+                if (errorEl) {
+                    if (message) {
+                        errorEl.textContent = message;
+                        errorEl.classList.remove('hidden');
+                        // Add red ring/border via Tailwind utilities
+                        input.classList.add('ring-2', 'ring-red-500', 'border-red-500');
+                    } else {
+                        errorEl.textContent = '';
+                        errorEl.classList.add('hidden');
+                        input.classList.remove('ring-2', 'ring-red-500', 'border-red-500');
+                    }
+                }
+            }
+
+            // Field-specific validators
+            function validateName() {
+                const input = document.getElementById('name');
+                const value = input.value.trim();
+
+                if (!value) return setError(input, 'Please enter your name.');
+                if (value.length < 2) return setError(input, 'Name must be at least 2 characters.');
+                // Pattern matches letters/spaces/hyphens/apostrophes; tweak to your locale as needed
+                const re = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$/;
+                if (!re.test(value)) return setError(input, 'Only letters, spaces, hyphens, and apostrophes are allowed.');
+
+                return setError(input, ''); // clear
+            }
+
+            function validateEmail() {
+                const input = document.getElementById('email');
+                const value = input.value.trim();
+                setError(input, '');
+
+                if (!value) return setError(input, 'Please enter your email address.');
+                // type="email" already checks format; this gives a friendlier message
+                if (!input.checkValidity()) return setError(input, 'Please provide a valid email, e.g., name@example.com.');
+
+                return setError(input, '');
+            }
+
+            // Wire up live validation
+            document.getElementById('name').addEventListener('input', validateName);
+            document.getElementById('name').addEventListener('blur', validateName);
+
+            document.getElementById('email').addEventListener('input', validateEmail);
+            document.getElementById('email').addEventListener('blur', validateEmail);
+
+            // On submit: validate all, focus first invalid, block submission if any invalid
+            form.addEventListener('submit', (e) => {
+                const validators = [validateName, validateEmail];
+                validators.forEach(fn => fn());
+
+                // If any field is invalid, prevent submission and show built-in bubble near the field
+                const firstInvalid = fields.find(f => !f.checkValidity());
+                if (firstInvalid) {
+                    e.preventDefault();
+                    firstInvalid.reportValidity();    // shows native tooltip near the field
+                    firstInvalid.focus({ preventScroll: false });
+                    return;
+                }
+
+                // Simulate success (since action="#" and we’re not posting anywhere)
+                e.preventDefault();
+                const ok = document.getElementById('formSuccess');
+                ok.textContent = 'Thanks! Your message was validated and would be submitted now.';
+                ok.classList.remove('hidden');
+                form.reset();
+                // Optional: remove error styles after reset
+                fields.forEach(f => setError(f, ''));
+            });
+        })();
+    </script>
+</body>
+
+</html>
