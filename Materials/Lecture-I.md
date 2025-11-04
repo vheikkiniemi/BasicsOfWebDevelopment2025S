@@ -20,13 +20,17 @@ A well-thought-out layout makes a web page *feel intuitive* and *look profession
 
 The evolution of web layout reflects both **technological progress** and **changing design philosophies**:
 
-### 🖥️ 1990s — The Table Era
+---
+
+**🖥️ 1990s — The Table Era**
 
 In the early web, designers used **HTML tables** to position text and images. This was a creative workaround, but it made sites heavy, inflexible, and hard to maintain.
 
 > 💡 Example: Websites often looked like printed brochures with rigid grids.
 
-### 🎨 2000s — CSS Takes Over
+---
+
+**🎨 2000s — CSS Takes Over**
 
 The introduction of **CSS (Cascading Style Sheets)** revolutionized web design. Designers could separate content from presentation, leading to:
 
@@ -36,7 +40,9 @@ The introduction of **CSS (Cascading Style Sheets)** revolutionized web design. 
 
 The concept of **semantic HTML** also emerged — focusing on meaning rather than appearance.
 
-### 📱 2010s — The Responsive Revolution
+---
+
+**📱 2010s — The Responsive Revolution**
 
 With the rise of smartphones, designers had to rethink layout. **Responsive design** (introduced around 2010) made pages adapt to any screen size using:
 
@@ -46,10 +52,11 @@ With the rise of smartphones, designers had to rethink layout. **Responsive desi
 
 Frameworks like **Bootstrap** and **Tailwind CSS** made responsive design faster and more accessible.
 
-### ⚙️ 2020s — Modern CSS and Design Systems
+---
 
-New CSS technologies like **Flexbox**, **Grid**, and **Clamp()** have made layout creation powerful and precise.
-Designers now think in **systems**, creating reusable components and consistent design languages.
+**⚙️ 2020s — Modern CSS and Design Systems**
+
+New CSS technologies like **Flexbox**, **Grid**, and **Clamp()** have made layout creation powerful and precise. Designers now think in **systems**, creating reusable components and consistent design languages.
 
 ---
 
@@ -62,7 +69,7 @@ The future of web layouts is shaped by **automation**, **accessibility**, and **
 * 🧠 **Adaptive layouts** — future sites might rearrange content dynamically depending on behavior or context.
 * 🌍 **Immersive and 3D experiences** — as VR/AR and WebGL become mainstream, “layout” will extend beyond flat screens.
 
-> The essence of layout will remain the same: **to connect people with information in the clearest, most meaningful way possible.**
+The essence of layout will remain the same: **to connect people with information in the clearest, most meaningful way possible.**
 
 ---
 
@@ -154,7 +161,7 @@ There are **three main categories**:
 After wireframing, designers move to **mockups** — visual versions of layouts that apply branding, color schemes, and typography.
 Then come **prototypes**, which simulate interaction.
 
-🧠 **Mockup** = how it looks
+🧠 **Mockup** = how it looks  
 ⚙️ **Prototype** = how it works
 
 This phase bridges the gap between **static layout** and **user interaction**.
