@@ -215,7 +215,7 @@ Every website is built on a layout — the invisible grid that shapes how users 
 
 Below are five classic approaches that form the foundation of modern web design.
 
-## 1. 🧭 Classic Header–Content–Footer
+## 1. 🧭 Classic Header–Content–Footer Layout
 
 This is the **most traditional and widely used layout** on the web.
 It consists of three main sections:
@@ -236,6 +236,9 @@ It consists of three main sections:
 <footer> at the bottom
 ```
 
+**Example:**
+
+![Example of a Classic Header–Content–Footer layout](<1-Classic Header-Content-Footer-Layout.png>)
 ---
 
 ## 2. 📚 Sidebar Layout
@@ -254,6 +257,11 @@ Sidebars are used for **navigation menus, filters, or additional tools** that co
 <aside> optional, below nav or on the far right  
 <footer> full width at bottom
 ```
+
+**Example:**
+
+![Example of a Sidebar layout](2-Sidebar-Layout.png)
+
 ---
 
 ## 3. 🧩 Grid-Based Layout
@@ -272,6 +280,11 @@ The design is modular and flexible, allowing multiple elements (cards, images, t
 <aside> placed in a grid cell next to main  
 <footer> spans full width
 ```
+
+**Example:**
+
+![Example of a Grid-Based layout](3-Grid-Based-Layout.png)
+
 ---
 
 ## 4. 🌄 Hero Layout
@@ -292,6 +305,10 @@ It usually includes a striking image or video background, a headline, a short de
 <footer> at bottom
 ```
 
+**Example:**
+
+![Example of a Hero layout](4-Hero-Layout.png)
+
 ---
 
 ## 5. 📰 Multi-Column Layout
@@ -309,4 +326,489 @@ It mimics traditional print layouts, allowing users to scan different sections o
 <main> divided into 2–3 columns using <section> or <article>  
 <aside> in one column for secondary info  
 <footer> bottom
+```
+
+**Example:**
+
+![Example of a Multi-Column Layout](5-Multi-Column-Layout.png)
+
+---
+
+# 🎓 Responsive Layout Patterns with Tailwind (without Nav and Aside)
+
+## 🧱 1. Classic Header–Content–Footer
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Classic Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-blue-500 text-white p-4 text-center">Header</header>
+  <main class="flex-grow p-6 bg-gray-50 text-center">Main Content</main>
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📚 2. Sidebar Layout
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sidebar Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-indigo-600 text-white p-4 text-center">Header</header>
+
+  <div class="flex flex-grow">
+    <aside class="w-1/4 bg-gray-200 p-4">Sidebar</aside>
+    <main class="flex-grow bg-gray-50 p-6 text-center">Main Content</main>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🧩 3. Grid-Based Layout
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-green-500 text-white p-4 text-center">Header</header>
+
+  <main class="flex-grow p-6 bg-gray-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="bg-white p-4 shadow rounded">Card 1</div>
+    <div class="bg-white p-4 shadow rounded">Card 2</div>
+    <div class="bg-white p-4 shadow rounded">Card 3</div>
+    <div class="bg-white p-4 shadow rounded">Card 4</div>
+    <div class="bg-white p-4 shadow rounded">Card 5</div>
+    <div class="bg-white p-4 shadow rounded">Card 6</div>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🌄 4. Hero Layout
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Hero Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-gray-900 text-white p-4 text-center">Header</header>
+
+  <section class="bg-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Our Page</h1>
+    <p class="text-lg mb-6">Simple hero section with a call-to-action</p>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100">Get Started</button>
+  </section>
+
+  <main class="flex-grow p-6 bg-gray-50 text-center">Main Content</main>
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📰 5. Multi-Column Layout
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Multi-Column Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-teal-600 text-white p-4 text-center">Header</header>
+
+  <main class="flex-grow bg-gray-50 p-6 grid md:grid-cols-3 gap-4">
+    <article class="bg-white p-4 shadow rounded">Column 1 content</article>
+    <article class="bg-white p-4 shadow rounded">Column 2 content</article>
+    <article class="bg-white p-4 shadow rounded">Column 3 content</article>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+# 🎓 Responsive Layout Patterns with Tailwind (without Aside)
+
+## 🧱 1. Classic Header–Content–Footer (with Nav)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Classic Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-blue-500 text-white">
+    <nav class="flex flex-wrap justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow p-6 bg-gray-50 text-center">Main Content</main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📚 2. Sidebar Layout (with Nav)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sidebar Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-indigo-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Dashboard</a>
+      <a href="#" class="hover:underline">Profile</a>
+      <a href="#" class="hover:underline">Settings</a>
+    </nav>
+  </header>
+
+  <div class="flex flex-grow">
+    <aside class="w-1/4 bg-gray-200 p-4">
+      <ul class="space-y-2">
+        <li><a href="#" class="block hover:underline">Menu 1</a></li>
+        <li><a href="#" class="block hover:underline">Menu 2</a></li>
+        <li><a href="#" class="block hover:underline">Menu 3</a></li>
+      </ul>
+    </aside>
+    <main class="flex-grow bg-gray-50 p-6 text-center">Main Content</main>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🧩 3. Grid-Based Layout (with Nav)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-green-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Gallery</a>
+      <a href="#" class="hover:underline">Portfolio</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow p-6 bg-gray-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="bg-white p-4 shadow rounded">Card 1</div>
+    <div class="bg-white p-4 shadow rounded">Card 2</div>
+    <div class="bg-white p-4 shadow rounded">Card 3</div>
+    <div class="bg-white p-4 shadow rounded">Card 4</div>
+    <div class="bg-white p-4 shadow rounded">Card 5</div>
+    <div class="bg-white p-4 shadow rounded">Card 6</div>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🌄 4. Hero Layout (with Nav)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Hero Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-gray-900 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:text-blue-400">Home</a>
+      <a href="#" class="hover:text-blue-400">Services</a>
+      <a href="#" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bg-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Our Page</h1>
+    <p class="text-lg mb-6">Simple hero section with a call-to-action</p>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100">Get Started</button>
+  </section>
+
+  <main class="flex-grow p-6 bg-gray-50 text-center">Main Content</main>
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📰 5. Multi-Column Layout (with Nav)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Multi-Column Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-teal-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">News</a>
+      <a href="#" class="hover:underline">Features</a>
+      <a href="#" class="hover:underline">Subscribe</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow bg-gray-50 p-6 grid md:grid-cols-3 gap-4">
+    <article class="bg-white p-4 shadow rounded">Column 1 content</article>
+    <article class="bg-white p-4 shadow rounded">Column 2 content</article>
+    <article class="bg-white p-4 shadow rounded">Column 3 content</article>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+# 🎓 Responsive Layout Patterns with Tailwind
+
+## 🧱 1. Classic Header–Content–Footer + Nav + Aside
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Classic Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-blue-500 text-white">
+    <nav class="flex flex-wrap justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow p-6 bg-gray-50 flex flex-col md:flex-row gap-6 text-center">
+    <section class="flex-1 bg-white p-4 shadow rounded">Main Content</section>
+    <aside class="w-full md:w-1/4 bg-gray-200 p-4 rounded">Related Info / Ads</aside>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📚 2. Sidebar Layout + Nav + Aside
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sidebar Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-indigo-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Dashboard</a>
+      <a href="#" class="hover:underline">Profile</a>
+      <a href="#" class="hover:underline">Settings</a>
+    </nav>
+  </header>
+
+  <div class="flex flex-grow">
+    <aside class="w-1/5 bg-gray-200 p-4">
+      <ul class="space-y-2">
+        <li><a href="#" class="block hover:underline">Menu 1</a></li>
+        <li><a href="#" class="block hover:underline">Menu 2</a></li>
+        <li><a href="#" class="block hover:underline">Menu 3</a></li>
+      </ul>
+    </aside>
+
+    <main class="flex-grow bg-gray-50 p-6 text-center">Main Content</main>
+
+    <aside class="hidden lg:block w-1/5 bg-gray-100 p-4 rounded">Extra Info</aside>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🧩 3. Grid-Based Layout + Nav + Aside
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-green-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">Gallery</a>
+      <a href="#" class="hover:underline">Portfolio</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <div class="flex flex-grow flex-col md:flex-row">
+    <main class="flex-grow p-6 bg-gray-50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-white p-4 shadow rounded">Card 1</div>
+      <div class="bg-white p-4 shadow rounded">Card 2</div>
+      <div class="bg-white p-4 shadow rounded">Card 3</div>
+      <div class="bg-white p-4 shadow rounded">Card 4</div>
+      <div class="bg-white p-4 shadow rounded">Card 5</div>
+      <div class="bg-white p-4 shadow rounded">Card 6</div>
+    </main>
+
+    <aside class="w-full md:w-1/4 bg-gray-200 p-4">Tags / Filters</aside>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 🌄 4. Hero Layout + Nav + Aside
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Hero Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-gray-900 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:text-blue-400">Home</a>
+      <a href="#" class="hover:text-blue-400">Services</a>
+      <a href="#" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bg-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Our Page</h1>
+    <p class="text-lg mb-6">Simple hero section with a call-to-action</p>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100">Get Started</button>
+  </section>
+
+  <div class="flex flex-grow flex-col md:flex-row">
+    <main class="flex-grow p-6 bg-gray-50 text-center">Main Content</main>
+    <aside class="w-full md:w-1/4 bg-gray-200 p-4">Announcements</aside>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
+```
+
+---
+
+## 📰 5. Multi-Column Layout + Nav + Aside
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Multi-Column Layout</title>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+  <header class="bg-teal-600 text-white">
+    <nav class="flex justify-center gap-6 p-4">
+      <a href="#" class="hover:underline">News</a>
+      <a href="#" class="hover:underline">Features</a>
+      <a href="#" class="hover:underline">Subscribe</a>
+    </nav>
+  </header>
+
+  <div class="flex flex-grow flex-col md:flex-row">
+    <main class="flex-grow bg-gray-50 p-6 grid md:grid-cols-3 gap-4">
+      <article class="bg-white p-4 shadow rounded">Column 1</article>
+      <article class="bg-white p-4 shadow rounded">Column 2</article>
+      <article class="bg-white p-4 shadow rounded">Column 3</article>
+    </main>
+
+    <aside class="w-full md:w-1/4 bg-gray-200 p-4">Sidebar Content</aside>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+</html>
 ```
