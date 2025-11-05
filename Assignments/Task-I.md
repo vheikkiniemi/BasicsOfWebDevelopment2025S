@@ -151,11 +151,7 @@ Submit (in itslearning) both:
 
 * Public **GitHub Pages link**
 * **GitHub repository** link
-* Short **README.md** describing:
-
-  * What your company rents
-  * Your design choices (colors, layout, typography)
-  * Any known limitations or improvements planned
+* **Answers** to questions
 
 ---
 
