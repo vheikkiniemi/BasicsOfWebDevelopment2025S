@@ -250,8 +250,8 @@ It consists of three main sections:
 
 ### ✅ 1.1. What changes from desktop to mobile?
 1.  **Single-column layout**:
-   - All elements stack vertically for easy scrolling.
-   - **Header → Nav → Main → Aside → Footer** in natural reading order.
+    - All elements stack vertically for easy scrolling.
+    - **Header → Nav → Main → Aside → Footer** in natural reading order.
 
 2. **Navigation**:
    - Horizontal nav becomes a stacked menu or collapsible hamburger for space efficiency.
