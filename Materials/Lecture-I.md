@@ -248,6 +248,30 @@ It consists of three main sections:
 ![Example of a Classic Header–Content–Footer layout](<1-Classic Header-Content-Footer-Layout.png>)
 ---
 
+### ✅ 1.1. What changes from desktop to mobile?
+1.  **Single-column layout**:
+   - All elements stack vertically for easy scrolling.
+   - **Header → Nav → Main → Aside → Footer** in natural reading order.
+
+2. **Navigation**:
+   - Horizontal nav becomes a stacked menu or collapsible hamburger for space efficiency.
+
+3. **Aside**:
+   - Moves below main content instead of being on the right side.
+
+4. **Footer**:
+   - Remains full-width at the bottom, but now closer to aside.
+
+5. **Content scaling**:
+   - Images and text blocks shrink to fit smaller screens.
+   - Padding and margins adjust for touch-friendly spacing.
+
+**Example:**
+
+![Example of a mobile view - Classic Header–Content–Footer layout](<1-Classic Header-Content-Footer-Mobile-view.png>)
+
+---
+
 ## 2. 📚 Sidebar Layout
 
 In this design, the page is divided into a **main content area** and one or more **sidebars** (usually on the left or right).
@@ -271,6 +295,25 @@ Sidebars are used for **navigation menus, filters, or additional tools** that co
 
 ---
 
+### ✅ 2.1. What changes from desktop to mobile?
+1. **Sidebar disappears as a column**:
+   - The `<nav>` that was in a vertical sidebar now moves below the header or becomes a hamburger menu for space efficiency.
+
+2. **Single-column stacking**:
+   - **Header → Nav → Main → Aside → Footer** in natural reading order.
+   - No horizontal split; everything is stacked vertically.
+
+3. **Aside moves down**:
+   - Instead of being next to main content, ASIDE is placed below the main section.
+
+4. **Footer remains full-width**:
+   - Positioned at the bottom, same as desktop but now closer to aside.
+
+5. **Touch-friendly adjustments**:
+   - Larger buttons, simplified navigation, and reduced text width for readability.
+
+---
+
 ## 3. 🧩 Grid-Based Layout
 
 This layout uses a **grid system** (rows and columns) to organize content.
@@ -291,6 +334,22 @@ The design is modular and flexible, allowing multiple elements (cards, images, t
 **Example:**
 
 ![Example of a Grid-Based layout](3-Grid-Based-Layout.png)
+
+---
+
+### ✅ 3.1. What changes from desktop to mobile?
+1. **Grid collapses into a single column**:
+   - All grid cells stack vertically: **Header → Nav → Main → Aside → Footer**.
+   - No multi-column arrangement.
+
+2. **Navigation**:
+   - Horizontal nav becomes stacked or collapsible.
+
+3. **Aside moves below main content**:
+   - Secondary info is placed after primary content for natural reading order.
+
+4. **Footer remains full-width**:
+   - Positioned at the bottom as in desktop.
 
 ---
 
@@ -318,6 +377,27 @@ It usually includes a striking image or video background, a headline, a short de
 
 ---
 
+### ✅ 4.1. What changes from desktop to mobile?
+1. **Hero section scales down**:
+   - The large hero image or banner in `<main>` becomes narrower and fits the screen width.
+   - Text and call-to-action buttons stack vertically for readability.
+
+2. **Single-column flow**:
+   - All elements stack vertically:  
+     **Header → Nav → Main (Hero) → Article → Aside → Footer**.
+
+3. **Navigation adapts**:
+   - Horizontal nav becomes a stacked list or collapsible hamburger menu.
+
+4. **Article and Aside move down**:
+   - Instead of being beside the hero, they appear below it in natural reading order.
+
+5. **Spacing and touch optimization**:
+   - Increased padding for buttons and links.
+   - Larger font sizes for readability on small screens.
+
+---
+
 ## 5. 📰 Multi-Column Layout
 
 This approach displays content in **two or more columns**, often used in magazines, blogs, and news sites.
@@ -338,6 +418,26 @@ It mimics traditional print layouts, allowing users to scan different sections o
 **Example:**
 
 ![Example of a Multi-Column Layout](5-Multi-Column-Layout.png)
+
+---
+
+### ✅ 5.1. What changes from desktop to mobile?
+1. **Columns collapse into a single column**:
+   - The two or three columns used for `<main>` and `<aside>` stack vertically.
+   - Reading order becomes **Header → Nav → Main → Aside → Footer**.
+
+2. **Navigation adapts**:
+   - Horizontal navigation bar becomes stacked or collapsible (hamburger menu).
+
+3. **Content scaling**:
+   - Images and text blocks shrink to fit smaller screens.
+   - Padding and margins adjust for touch-friendly spacing.
+
+4. **Aside moves below main content**:
+   - Secondary information is placed after primary content for natural reading flow.
+
+5. **Footer remains full-width**:
+   - Positioned at the bottom, same as desktop.
 
 ---
 
