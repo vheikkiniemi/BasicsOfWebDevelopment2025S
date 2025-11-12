@@ -1,4 +1,4 @@
-# Task J — Build a Rental **Catalog** Page (linked from your Landing Page)
+# Task J — Build a Rental Catalog Page
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
