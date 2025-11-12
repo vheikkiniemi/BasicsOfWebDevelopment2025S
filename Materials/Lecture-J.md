@@ -1,4 +1,4 @@
-#  Effective Use of 📸 Images and 🎞️  Videos in Modern Websites
+#  Effective Use of 📸 Images and 🎞️  Videos in Websites
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
