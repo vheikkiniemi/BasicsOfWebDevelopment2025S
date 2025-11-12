@@ -1,4 +1,4 @@
-# Task I — Build a Rental Business Landing Page
+# Task I: Build a Rental Business Landing Page
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.

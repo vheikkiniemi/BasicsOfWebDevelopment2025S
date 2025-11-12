@@ -1,4 +1,4 @@
-# Task F — Functionality First: “Add row” table behavior
+# Task F: Functionality First: “Add row” table behavior
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.

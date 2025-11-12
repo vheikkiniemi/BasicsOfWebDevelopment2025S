@@ -1,4 +1,4 @@
-# Task G — Form with Custom Validation
+# Task G: Form with Custom Validation
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.

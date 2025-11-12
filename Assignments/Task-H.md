@@ -1,4 +1,4 @@
-# Task H — Modernize Your Page with Tailwind CSS
+# Task H: Modernize Your Page with Tailwind CSS
 
 > [!NOTE]
 > The material was created with the help of ChatGPT and Copilot.
