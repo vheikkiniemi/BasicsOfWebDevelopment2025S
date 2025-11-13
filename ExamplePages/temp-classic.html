@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Classic Layout</title>
+</head>
+
+<body class="flex flex-col min-h-screen text-gray-800">
+    <header class="bg-gray-800  text-white">
+        <nav class="flex flex-wrap justify-center gap-6 p-4">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">Contact</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow p-6 bg-gray-50 flex flex-col md:flex-row gap-6 text-center 
+             bg-cover bg-center bg-no-repeat relative" style="background-image: url('example.jpg');">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <section class="flex-1 p-4 bg-white/90 shadow rounded">
+            <h1 class="text-2xl font-bold">Beautiful Sunset</h1>
+            <p>This text sits on top of the background image.</p>
+        </section>
+        <aside class="w-full md:w-1/4 bg-gray-200 p-4 rounded">Related Info / Ads</aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+</body>
+
+</html>
