@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Author: Ville Heikkiniemi
+Date: 2025-11-13
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: "#e10e49", // Primary color 1
+                            light: "#ffffff", // Primary color 2
+                            dark: "#1e1e1e", // Primary color 3
+
+                            blue: "#263f6a",
+                            green: "#284e36",
+                            orange: "#e37222",
+                            rose: "#c24d52",
+                        }
+                    },
+                    boxShadow: {
+                        soft: "0 18px 45px rgba(0, 0, 0, 0.45)",
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Grid Layout</title>
+</head>
+
+<!--<body class="flex flex-col min-h-screen text-gray-800">-->
+
+<body class="flex flex-col min-h-screen text-gray-800 bg-[url('example.jpg')] bg-cover bg-center bg-no-repeat">
+    <div class="absolute inset-0 bg-black/5"></div>
+    <header class="bg-brand-dark/95 text-white">
+        <nav class="flex justify-center gap-6 p-4">
+            <a href="#" class="hover:underline">Gallery</a>
+            <a href="#" class="hover:underline">Portfolio</a>
+            <a href="#" class="hover:underline">Contact</a>
+        </nav>
+    </header>
+
+    <div class="flex flex-grow flex-col md:flex-row">
+        <main class="flex-grow p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 1</div>
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 2</div>
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 3</div>
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 4</div>
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 5</div>
+            <div class="bg-white p-4 shadow rounded aspect-[4/3]">Card 6</div>
+        </main>
+    </div>
+
+    <footer class="bg-brand-dark/95 text-white p-4 text-center">Footer</footer>
+</body>
+
+</html>
