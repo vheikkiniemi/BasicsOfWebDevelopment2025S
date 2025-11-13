@@ -34,6 +34,9 @@ After completing this task, you can:
 
 ## ✅ Requirements
 
+> [!NOTE]
+> 🖼️ **Important:** The page must include the following example image somewhere on the page: [example.jpg](https://github.com/vheikkiniemi/BasicsOfWebDevelopment2025S/blob/main/Assignments/example.jpg)
+
 ### 1️⃣ Information Architecture
 
 * **Landing page** (from Task I) → adds a **link/button** to the catalog
@@ -99,6 +102,9 @@ After completing this task, you can:
 ---
 
 ## 🧮 Grading Criteria (0–2 points)
+
+> [!NOTE]
+> 🖼️ **Important:** The page must include the following example image somewhere on the page: [example.jpg](https://github.com/vheikkiniemi/BasicsOfWebDevelopment2025S/blob/main/Assignments/example.jpg)
 
 | Points | Description                                                                                                                                                                          |
 | :----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
