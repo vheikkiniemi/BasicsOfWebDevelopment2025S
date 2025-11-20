@@ -85,7 +85,7 @@ The **order form** must be built using semantic HTML (`<form>`, `<label>`, etc.)
 
 ---
 
-### 3️⃣ Validation & UX
+### 3️⃣ Validation & UX (Validation is optional!)
 
 - Use **HTML5 validation** attributes:
   - `required` for fields that must be filled in.
@@ -176,8 +176,8 @@ The **order form** must be built using semantic HTML (`<form>`, `<label>`, etc.)
 | Points | Description |
 | :----: | ----------- |
 | **0** | The Order page is missing or does not meet basic layout and form requirements. Styling is broken or inconsistent with other pages. Navigation between pages does not work reliably. |
-| **1** | The Order page exists and generally works, but layout, responsiveness, or validation is weak. Visual identity is partially inconsistent with the landing/catalog pages, or some key fields/labels are unclear. |
-| **2** | The Order page looks and feels **polished and professional**. It is responsive, visually consistent with Landing and Catalog, uses semantic HTML and accessible labels, and includes meaningful HTML5 validation. Navigation between all three pages works smoothly. |
+| **1** | The Order page exists and generally works, but layout, or responsiveness is weak. Visual identity is partially inconsistent with the landing/catalog pages, or some key fields/labels are unclear. |
+| **2** | The Order page looks and feels **polished and professional**. It is responsive, visually consistent with Landing and Catalog, uses semantic HTML and accessible labels. Navigation between all three pages works smoothly. |
 
 ---
 
