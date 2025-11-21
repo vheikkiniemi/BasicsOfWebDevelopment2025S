@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Classic Layout – Updated Company Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: "#e10e49", // Primary color 1
+              light: "#ffffff", // Primary color 2
+              dark: "#1e1e1e", // Primary color 3
+
+              blue: "#263f6a",
+              green: "#284e36",
+              orange: "#e37222",
+              rose: "#c24d52",
+            }
+          },
+          boxShadow: {
+            soft: "0 18px 45px rgba(0, 0, 0, 0.45)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-brand-dark text-brand-light antialiased">
+
+  <!-- Background texture -->
+  <div class="pointer-events-none fixed inset-0 -z-10 opacity-50 mix-blend-soft-light" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.10) 1px, transparent 0);
+              background-size: 18px 18px;">
+  </div>
+
+  <!-- Accents using supporting colours -->
+  <div
+    class="pointer-events-none fixed inset-y-0 left-0 -z-10 w-1/3 bg-gradient-to-b from-brand-blue/20 via-transparent to-brand-orange/20 blur-3xl">
+  </div>
+  <div
+    class="pointer-events-none fixed inset-y-0 right-0 -z-10 w-1/3 bg-gradient-to-b from-brand-rose/20 via-transparent to-brand-green/20 blur-3xl">
+  </div>
+
+  <!-- Page wrapper -->
+  <div class="flex min-h-screen flex-col">
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800/70 bg-brand-dark/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary shadow-soft">
+            <span class="text-xs font-bold text-white">LOGO</span>
+          </span>
+          <div>
+            <span class="block text-sm font-semibold text-brand-light">Your Company</span>
+            <span class="block text-xs text-brand-light/70">Updated brand theme</span>
+          </div>
+        </div>
+
+        <!-- NAV -->
+        <nav class="hidden items-center gap-6 text-sm font-medium text-brand-light/80 md:flex">
+          <a href="#" class="hover:text-brand-primary">Home</a>
+          <a href="#" class="hover:text-brand-primary">Services</a>
+          <a href="#" class="hover:text-brand-primary">About</a>
+          <a href="#" class="hover:text-brand-primary">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <a href="#"
+          class="hidden rounded-full bg-brand-primary px-4 py-1.5 text-sm font-semibold text-white shadow-soft hover:brightness-110 md:inline-flex">
+          Get in touch
+        </a>
+
+        <!-- Mobile placeholder -->
+        <button
+          class="inline-flex items-center justify-center rounded-full border border-slate-700 bg-brand-dark px-2 py-1 text-xs text-brand-light md:hidden">
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN AREA -->
+    <main class="mx-auto flex w-full max-w-6xl flex-1 px-4 py-6 md:px-6 md:py-8">
+
+      <div class="grid w-full gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+
+        <!-- ARTICLE -->
+        <article class="space-y-4 rounded-2xl border border-brand-light/10 bg-black/40 p-5 shadow-soft md:p-6">
+
+          <header class="space-y-1">
+            <h1 class="text-2xl font-semibold text-brand-light">Skeleton of the order form</h1>
+          </header>
+
+          <form class="mx-auto p-6 shadow rounded space-y-4">
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="flex flex-col space-y-1">
+                <label for="firstName" class="text-sm font-medium text-brand-light">First name</label>
+                <input id="firstName" name="firstName" class="border border-gray-300 rounded px-3 py-2 text-sm" />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <label for="lastName" class="text-sm font-medium text-brand-light">Last name</label>
+                <input id="lastName" name="lastName" class="border border-gray-300 rounded px-3 py-2 text-sm" />
+              </div>
+            </div>
+            <div class="flex items-start space-x-2">
+              <input id="terms" name="terms" type="checkbox" required class="mt-1 h-4 w-4 rounded border-gray-300
+           text-brand-light focus:ring-blue-500" />
+              <label for="terms" class="text-sm text-brand-light">
+                I agree to the terms and conditions.
+              </label>
+            </div>
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-gray-700 mb-1">
+                Choose a plan
+              </legend>
+
+              <div class="flex items-center space-x-2">
+                <input id="basic" name="plan" type="radio" value="basic"
+                  class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500" required />
+                <label for="basic" class="text-sm text-gray-700">Basic</label>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <input id="pro" name="plan" type="radio" value="pro"
+                  class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500" />
+                <label for="pro" class="text-sm text-gray-700">Pro</label>
+              </div>
+            </fieldset>
+            <div class="flex flex-col space-y-1">
+              <label for="country" class="text-sm font-medium text-gray-700">Country</label>
+              <select id="country" name="country" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm
+           bg-brand-blue/90
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <option value="">Select your country</option>
+                <option value="fi">Finland</option>
+                <option value="se">Sweden</option>
+                <option value="no">Norway</option>
+              </select>
+            </div>
+            <!-- Single form control group -->
+            <div class="flex flex-col space-y-1">
+              <label for="email" class="text-sm font-medium text-brand-light">
+                Email address
+              </label>
+              <input id="email" name="email" type="email" required class="border border-gray-300 rounded px-3 py-2 text-sm
+             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-brand-blue/90"
+                placeholder="you@example.com" />
+              <p class="text-xs text-gray-500">
+                We will never share your email.
+              </p>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-blue text-white font-semibold py-2 rounded
+           hover:bg-brand-rose focus:outline-none focus:ring-2 focus:ring-blue-500">
+              Make an order
+            </button>
+          </form>
+        </article>
+
+        <!-- ASIDE -->
+        <aside class="space-y-4 rounded-2xl border border-brand-light/10 bg-black/40 p-5 shadow-soft md:p-6">
+
+          <div class="space-y-2">
+            <h2 class="text-sm font-semibold text-brand-light">Sidebar</h2>
+            <p class="text-xs text-brand-light/70">
+              Use this area for highlights, summaries, or links related to the page content.
+            </p>
+          </div>
+
+          <!-- Blue card -->
+          <div class="space-y-2 rounded-xl border border-brand-blue/60 bg-brand-blue/20 p-3">
+            <p class="text-xs font-medium uppercase tracking-[0.18em] text-brand-light">Quick links</p>
+            <ul class="space-y-1 text-sm">
+              <li><a href="#" class="text-brand-primary hover:text-brand-primary/80">Link one</a></li>
+              <li><a href="#" class="text-brand-primary hover:text-brand-primary/80">Link two</a></li>
+              <li><a href="#" class="text-brand-primary hover:text-brand-primary/80">Link three</a></li>
+            </ul>
+          </div>
+
+          <!-- Orange/Green highlight -->
+          <div class="space-y-2 rounded-xl border border-brand-orange/60 bg-brand-orange/15 p-3">
+            <p class="text-xs font-medium uppercase tracking-[0.18em] text-brand-orange">Highlight</p>
+            <p class="text-sm text-brand-light">Use this area for key reminders or notes.</p>
+
+            <div class="mt-1 flex flex-wrap gap-1 text-[0.7rem]">
+              <span class="rounded-full bg-brand-green/30 px-2 py-0.5 text-brand-light">Important</span>
+              <span class="rounded-full bg-brand-rose/30 px-2 py-0.5 text-brand-light">Action needed</span>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/70 bg-brand-dark/95">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-4 text-[0.75rem] text-brand-light/60 md:flex-row md:px-6">
+        <p>© 2025 Your Company – Updated brand theme.</p>
+        <p>#e10e49 • #ffffff • #1e1e1e</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
