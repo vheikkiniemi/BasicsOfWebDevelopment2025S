@@ -17,7 +17,7 @@ sequenceDiagram
     S->>V: Validate request
     V-->>S: Validation result
 
-    alt Validation fails (Generic)
+    alt Validation fails (express-validator)
         S-->>B: Errors in validation
         B-->>F: 400 Bad Request
         F-->>U: Show validation error message
@@ -129,7 +129,7 @@ sequenceDiagram
         S-->>B: Invalid ID
         B-->>F: 400 Bad Request
         F-->>U: Show Invalid ID message
-    else Validation fails (Generic)
+    else Validation fails (express-validator)
         S-->>B: Errors in validation
         B-->>F: 400 Bad Request
         F-->>U: Show validation error message
