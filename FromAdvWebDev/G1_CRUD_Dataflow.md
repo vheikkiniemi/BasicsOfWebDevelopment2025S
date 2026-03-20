@@ -122,14 +122,14 @@ sequenceDiagram
     F->>B: PUT /api/resources/:id (JSON)
     B->>S: update Resource(id, data)
 
+    S->>V: Validate request
+    V-->>S: Validation result
+
     alt Invalid ID
         S-->>B: Invalid ID
         B-->>F: 400 Bad Request
         F-->>U: Show Invalid ID message
     else Valid ID
-
-        S->>V: Validate request
-        V-->>S: Validation result
 
         alt Validation fails
             S-->>B: Errors in validation
