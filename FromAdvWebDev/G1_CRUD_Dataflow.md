@@ -129,35 +129,32 @@ sequenceDiagram
         S-->>B: Invalid ID
         B-->>F: 400 Bad Request
         F-->>U: Show Invalid ID message
-    else Valid ID
+    else Validation fails (Generic)
+        S-->>B: Errors in validation
+        B-->>F: 400 Bad Request
+        F-->>U: Show validation error message
+    else Validation OK
+        S->>DB: UPDATE resources SET data WHERE id 
+        DB-->>S: Result
 
-        alt Validation fails
-            S-->>B: Errors in validation
-            B-->>F: 400 Bad Request
-            F-->>U: Show validation error message
-        else Validation OK
-            S->>DB: UPDATE resources SET data WHERE id 
-            DB-->>S: Result
-
-            alt Success
-                S-->>B: Updated resource
-                B-->>F: 200 OK
-                F-->>U: Show success message
-            else Not found
-                S-->>B: Resource not found
-                B-->>F: 404 Not found
-                F-->>U: Show not found message
-            else Duplicate
-                S-->>B: Duplicate detected
-                B-->>F: 409 Conflict
-                F-->>U: Show duplicate message
-            else Database error
-                S-->>B: Database error
-                B-->>F: 500 Internal Server Error
-                F-->>U: Show database error
-            end
+        alt Success
+            S-->>B: Updated resource
+            B-->>F: 200 OK
+            F-->>U: Show success message
+        else Not found
+            S-->>B: Resource not found
+            B-->>F: 404 Not found
+            F-->>U: Show not found message
+        else Duplicate
+            S-->>B: Duplicate detected
+            B-->>F: 409 Conflict
+            F-->>U: Show duplicate message
+        else Database error
+            S-->>B: Database error
+            B-->>F: 500 Internal Server Error
+            F-->>U: Show database error
         end
-    end     
+    end    
 ```
 
 # 4️⃣ DELETE — Resource (Sequence Diagram)
